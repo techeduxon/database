@@ -1,0 +1,758 @@
+﻿
+
+
+<!--==================== Blog Individual Page Code ====================-->
+                        
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Important aspects of database security</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Important aspects of database security">
+	<meta name="description" content="This article outlines how a company can make sure that their database is fully managed and secured against data breaches.">
+	<link rel="canonical" href="important-aspects-of-database-security.html">
+	<meta property="og:title" content="Important aspects of database security">
+    <meta property="og:description" content="This article outlines how a company can make sure that their database is fully managed and secured against data breaches.">
+    <meta property="og:image" content="https://geopits.com/howdymanage/uploads/image/blogs/important-aspects-of-database-security/01.jpg">
+    
+      	<link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="../assets/images/favicon.png">
+	<!-- CSS
+        ============================================ -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css">
+	<!-- Font Family CSS -->
+	<link rel="stylesheet" href="../assets/css/vendor/cerebrisans.css">
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="../assets/css/vendor/fontawesome-all.min.css">
+	<!-- Swiper slider CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/swiper.min.css">
+	<!-- animate-text CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/animate-text.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/animate.min.css">
+	<!-- Select2 CSS -->
+	<link rel="stylesheet" href="../assets/css/select2.min.css">
+	<!-- Light gallery CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/lightgallery.min.css">
+	<!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
+	<!--
+        <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+        -->
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css"> 
+
+	<!-- Start of Async Drift Code -->
+<!-- End of Async Drift Code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="../gtag/js.js?id=UA-100125040-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-100125040-1');
+</script>
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://google.com/article"
+          },
+          "headline": "Important aspects of database security",
+          "image": [
+            "https://geopits.com/howdymanage/uploads/image/blogs/important-aspects-of-database-security/01.jpg"
+          ],
+          "datePublished": "2021-05-19 12:21:20",
+          "dateModified": "June 07, 2021",
+          "author": {
+            "@type": "Person",
+            "name": "Thirunavukkarasu RM"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "GeoPITS",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://staginggeopits.cyces.co/assets/images/logo/geopits-logo.svg"
+            }
+          }
+        }
+    </script>
+    <style>
+        .post-excerpt p{
+            font-size: 19px;
+        }
+        .related-posts-wrapper{
+            margin-top: 45px;
+        }
+         blockquote {
+            padding-left: 20px;
+            margin: 30px 0 !important;
+            font-size: 19px;
+            font-weight: normal;
+        }
+        img{
+            max-width: 100%;
+            height: auto !important;
+        }
+        .post-excerpt h1{
+            font-size: 40px;
+        }
+        
+        .post-excerpt h2{
+            font-size: 22px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-excerpt h3{
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-excerpt h3,h4,h5,h6{
+            font-size: 19px;
+        }
+        
+        .post-excerpt ol,.post-excerpt ul{
+            font-size: 19px;
+        }
+        
+        .post-excerpt ul{
+            padding-left: 40px;
+        }
+        
+        .tags::after{
+            content: ",";
+        }
+        .tags:last-of-type::after{
+            content: " ";
+        }
+        .post-info ul li{
+            list-style: disc;
+            margin-left: 10px;
+            font-size: 19px;
+        }
+        
+        figure{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        figcaption{
+            text-align:center;
+        }
+        .post-excerpt a{
+            color: #0895D5;
+        }
+        .post-excerpt a:hover{
+            text-decoration:underline;
+        }
+         .ht-large-box-images.style-03 .content .heading{
+        min-height: 90px !important;
+        }
+         .ht-large-box-images.style-03 .content .heading{
+            -webkit-line-clamp: 3
+        }
+         div.text{
+            display: -webkit-box;
+            -webkit-line-clamp: 3 !important;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            font-weight: normal !important;
+        }
+        div.text strong{
+            font-weight: normal;
+        }
+        h5.heading{
+            text-transform: capitalize !important;
+        }
+        .box-images-arrow span.button-text{
+            margin-right:4px;
+        }
+        .blog-thumbnail{
+            height:250px !important; 
+            object-fit:cover; 
+            width:100%
+        }
+        .blog-pages-wrapper .breadcrumb{
+            background: none;
+        }
+        .blog-pages-wrapper .breadcrumb .breadcrumb-item {
+            color : #1CAD45;
+        }
+        .blog-pages-wrapper .breadcrumb .breadcrumb-item.active{
+            color: #0895D5;
+        }
+        .breadcrumb-item+.breadcrumb-item::before{
+            color : #1CAD45;
+        }
+    </style>
+</head>
+    <body>
+    
+<!--====================  header area ====================-->
+	<div class="header-area header-area--default">
+		<!-- Header Top Wrap Start -->
+	        	<div class="header-top-wrap bg-theme-default border-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="text-center top-message text-white">
+						    <a href="../sql-compare.html" target="_blank" rel="nofollow noopener"> Get a free demo of our new SQL Compare Tool ➔  </a>
+						 </p>
+					</div>
+				</div>
+			</div>
+		</div>		<!-- Header Top Wrap End -->
+		<!-- Header Bottom Wrap Start -->
+		<div class="header-bottom-wrap  bg-white header-sticky">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="header position-relative">
+							<!-- brand logo -->
+							<div class="header__logo">
+								<a href="../index.htm"> <img src="../assets/images/logo/geopits-logo.svg" class="img-fluid" alt="GeoPITS Logo"> </a>
+							</div>
+							<div class="header-right">
+								<!-- navigation menu -->
+								<div class="header__navigation menu-style-three d-none d-xl-block">
+									<nav class="navigation-menu">
+										<ul class="d-flex align-items-center">
+											<li class="has-children has-children--multilevel-submenu"> <a href="../services.html"><span>Services</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu min-width-304">
+                                                    <li><a href="../remote-support-dba-services.html"><span>SQL Server DBA Remote Support</span></a></li>
+                                                    <li><a href="../sql-server-dba-managed-services.html"><span>SQL Server Managed Services</span></a></li>
+                                                    <li><a href="../cloud-database-management-services.html"><span>SQL on Cloud</span></a></li>
+                                                    <li><a href="../sql-server-consulting-services.html"><span>Database Consulting</span></a></li>
+                                                    <li><a href="../data-engineering-services.html"><span>Data Engineering</span></a></li>
+                                                    <li><a href="../database-migration-services.html"><span>Database Migration</span></a></li>
+                                                    <li><a href="../sql-performance-tuning-and-analysis.html"><span>Database Performance Tuning</span></a></li>
+                                                    <li><a href="../analytics-and-bi-services.html"><span>Analytics &amp; BI</span></a></li>
+                                                    <li><a href="../data-integration-services.html"><span>Data Integration</span></a></li>
+                                                    <li><a href="../application-development-services.html"><span>Enterprise Application Development</span></a></li>
+                                                    <li><a href="../speedcloud-servers.html"><span>SpeedCloud™</span></a></li>
+                                                    <li><a href="../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+                                                </ul>
+											</li>
+											<li class="has-children has-children--multilevel-submenu"><a><span>About</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu">
+													<li><a href="../our-story.html"><span>The startup story</span></a></li>
+													<li><a href="../about-our-team.html"><span>Our Team</span></a></li>
+													<li><a href="../clients.html"><span>Clients</span></a></li>
+													
+													<li><a href="../recognition.html"><span>Recognition</span></a></li>
+													<li><a href="../careers/index.htm" class="hover-style-link"><span>Careers</span></a></li>
+												</ul>
+											</li>
+											<li><a href="../case-studies/index.htm"><span>Case Studies</span></a></li>
+											<li class="has-children has-children--multilevel-submenu"><a><span>Resources</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu">
+													<li><a href="index.htm"><span>Blog</span></a></li>
+													<li><a href="../sql-server/index.htm"><span>SQL Features Explorer</span></a></li>
+												</ul>
+											</li>
+											<!--<li><a href=""><span>Blog</span></a></li>-->
+											<li><a href="/contact"><span>Contact Us</span></a></li>
+											<li><a href="../get-free-db-audit.html" class="ht-btn ht-btn-sm text-white">Get Free DB Audit</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!-- mobile menu -->
+								<div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger"><i></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header Bottom Wrap End -->
+	</div>
+	<!--====================  End of header area  ====================-->
+	    <div class="site-wrapper-reveal">
+        <!--====================  Blog Area Start ====================-->
+        <div class="blog-pages-wrapper py-3">
+            <div class="container">
+                
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.htm">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.htm">Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Important aspects of database security</li>
+                  </ol>
+                </nav>
+                
+                <section class="single-blog-item mb-5">
+                    <section class="post-info">
+                    
+                        
+                        <h1 class="post-title text-center">
+                            
+                             Important aspects of database security                            
+                        </h1>
+                        
+                    <div class="post-meta mt-20 justify-content-center">
+                        <div class="post-author">
+                                Thirunavukkarasu RM                        </div>
+                        <div class="post-date">
+                            <span class="far fa-calendar meta-icon"></span>
+                            May, 2021                        </div>
+                    </div>
+                </section>
+                </section>
+                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Post Feature Start -->
+                       
+                        <!-- Post Feature End -->
+                    </div>
+                    <div class="col-lg-8 ml-auto mr-auto">
+                        <div class="main-blog-wrap">
+                            <!--======= Single Blog Item Start ========-->
+                            <div class="single-blog-item  wow move-up">
+
+                                <!-- Post info Start -->
+                                <div class="post-info lg-blog-post-info">
+                                    
+                                    <div class="post-excerpt mt-15">
+                                        <p>When we hear the word &ldquo;security&rdquo;, we either think about physical locks or in terms of protection against cyber threats. These are the cornerstones that sustain our personal infrastructure. In a manner that&rsquo;s eerily similar, all companies sustain their businesses through data. It goes without saying that hundreds of thousands of businesses rely heavily on databases, so much so that it&rsquo;s what holds a company&rsquo;s backbone straight. Its transactions, employee information, customer details, financial data &mdash; everything is stored in a database somewhere, and for obvious reasons, it&rsquo;s paramount that it stays secure.</p>
+
+<p><strong>What Is Database Security?</strong></p>
+
+<p>By definition, <strong>database security</strong> is the set of actions or tools that, under the umbrella of information security, protects the confidentiality, integrity, and availability of a database. Database security can be broadly divided into two parts, namely physical and digital. Let&rsquo;s understand them in detail.</p>
+
+<p><strong>Physical Security</strong></p>
+
+<p>When we say physical security, the most obvious thing that comes to mind is the datacentre with zerotrust architecture.</p>
+
+<p style="text-align: center;"><img alt="" src="../howdymanage/uploads/image/blogs/important-aspects-of-database-security/01.jpg" style="width: 500px; height: 500px;"></p>
+
+<p style="text-align: center;"><a href="https://unsplash.com/photos/KDdNjUQwzSw" rel="nofollow"><sup>Image source&nbsp;</sup></a></p>
+
+<p>Protecting physical data is quite an elaborate venture. It requires one to manage its security by considering the geological activity and natural calamity frequency in the datacentre&rsquo;s location, among other factors. Moreover, one must perform regular security audits, keep power backups and commit to live video surveillance, all the while maintaining entry logs.</p>
+
+<p><strong>Digital Security</strong></p>
+
+<p>When we talk about security controls on our networks and software, we are aiming at the digital security infrastructure of an institution.</p>
+
+<p>For any database platform to achieve digital security with perfection, it&rsquo;s important for them to double-check their database and backup encryption, its access privilege, password policies, in-built tools for monitoring, and firewall. Other <strong>database security best practices</strong> include actively looking for vulnerabilities and applying security patches, and committing to <strong>database normalization</strong> as a rule of thumb.</p>
+
+<p>With this in mind, let&rsquo;s take a look at the most important<strong> types of database security</strong> paradigms and how they are implemented.</p>
+
+<p><strong>Compliance&nbsp;</strong></p>
+
+<p>Compliance is one of the most important aspects of constituting a database protection solution. Most of the statutes and regulations provided with compliance norms tend to address very practical and very real pain points that demand attention.</p>
+
+<p>Microsoft&rsquo;s <strong>Azure SQL database</strong> is compliant with regulations such as PCI, HIPAA, and GDPR. But it doesn&rsquo;t end there. Microsoft Azure, right out of the box, gives you an elaborate edge to database protection that includes all the tools necessary for protecting your data along with all the entry points which have access to it.&nbsp;</p>
+
+<p><strong>Access Control&nbsp; </strong></p>
+
+<p>With the primary aim to thaw potential threats from within the organization and prevent malicious attacks, access control is a much-needed feature in any database management infrastructure. By separating duties and execution needs, raising privileges according to user requirements can enforce damage control to a great degree. For instance, a tester may need access to the database, but not necessarily the actual data within it.</p>
+
+<p>Every efficient database must offer solutions that separate tasks and regulate privileges. With that in mind, we can always count on <strong>Microsoft Azure security</strong> for its secure access control. Authentication is performed using the identities managed by Azure Active Directory, granting users the least privileges necessary for database access.</p>
+
+<p>Microsoft also enforces row-level security based upon a user&rsquo;s identity, role, or execution context, limiting sensitive data exposure.</p>
+
+<p><strong>Protection Against SQL Injection&nbsp;</strong></p>
+
+<p>Since the access to the database is through SQL commands, protection against SQL injection attacks is the most important <strong>database security</strong> paradigm that needs implementation. With a&nbsp; firewall in place, we should be able to block a predetermined set of SQLi commands, and if that&rsquo;s not enough, we can implement our own set of policies as per the organization&rsquo;s requirements.</p>
+
+<p>Advanced Threat Protection offered by Microsoft for <strong>Azure SQL Database </strong>is highly capable when it comes to detecting anomalous activities. Your system can alert you whenever there&rsquo;s some unusual behaviour or attempts to exploit your database.&nbsp;</p>
+
+<p>Advanced Threat Protection actively looks for potential SQL injection, brute force SQL credentials, and access from unfamiliar locations, which only further strengthens the Azure SQL security.</p>
+
+<p><strong>Data Masking</strong></p>
+
+<p>Database administrators often need to hide certain information within a database while still being able to handle it, like a customer&rsquo;s login password. Hence, there&rsquo;s a need to hide such sensitive information. The aim of data masking is to do just that &mdash; scramble the data, making it unreadable when retrieved.&nbsp;</p>
+
+<p>Data masking, broadly speaking, is of 2 types &mdash; static and dynamic. With dynamic data masking, you should still be able to view the format of the data in the database while the actual data remains obfuscated. On the other hand, static masking creates a duplicate of the entire database (with the actual data masked) for developers and testers. Microsoft offers both of them in its <strong>cloud database management system</strong>.</p>
+
+<p style="text-align: center;"><img alt="" src="https://geopits.com/howdymanage/uploads/image/blogs/important-aspects-of-database-security/03.jpg" style="width: 500px; height: 333px;"></p>
+
+<p style="text-align: center;"><a href="https://unsplash.com/photos/iar-afB0QQw" rel="nofollow"><sup>Image Source</sup></a></p>
+
+<p>Dynamic data masking applies to all <strong>Azure SQL Database</strong>, Azure SQL Managed Instance, and Azure Synapse Analytics. With this, <strong>Microsoft SQL server security</strong> limits sensitive data exposure by masking it to non-privileged users.</p>
+
+<p>It&rsquo;s important to note here that SQL users are excluded from masking (administrator privileges required). Also, it&rsquo;s possible to set your own rules, choosing designated fields, database schema, table, and column names. You can fully mask the data in a designated field or wherever the system detects an email address, or random numerical data, or any custom string.</p>
+
+<p>Again, you obviously have the option to keep a separate sanitized copy of your database by putting static data masking to use whenever there&rsquo;s a need to share it with non-production users.</p>
+
+<p><strong>Data Encryption&nbsp;</strong></p>
+
+<p>Within a database, information can be encrypted on different levels. For instance, you can encrypt an entire database, protecting it from misappropriation when, say, an unauthorized third party gains access to the data physically. Again, you can protect the database externally, securing all the endpoints when the data is being sent through the transport channel.</p>
+
+<p>Microsoft takes every business&rsquo;s<strong> database security requirements </strong>very seriously and offers a wide range of encryption options for businesses. There&rsquo;s the option for encryption of data at rest, including data on a magnetic strip, disk, blob, or table storage. This feature is available for services across SaaS, PaaS, IaaS, and cloud models.</p>
+
+<p>Client-side encryption is performed outside of Azure, and the cloud service providers don&rsquo;t have encryption/decryption keys.</p>
+
+<p>As for Server-side encryption, Azure offers you 3 models that you can choose as per your requirements. It includes service-managed keys, customer-managed keys, and service-managed keys in customer-controlled hardware.</p>
+
+<p>You also have disk encryption using Windows BitLocker, Storage Service Encryption, Column-level encryption, Cosmos DB database encryption, TLS, RDP sessions, VPN encryption, and <a href="https://docs.microsoft.com/en-us/azure/security/fundamentals/encryption-overview" rel="nofollow">a lot more on the table </a>&nbsp;when you choose Azure.</p>
+
+<p><strong>Final Thoughts</strong></p>
+
+<p>Having a fully managed secure database should be at the top of the priority table for any company, and that&rsquo;s where <a href="../index.htm">Geo Platinum IT Services</a> comes in. Whether it&rsquo;s <strong>database consulting</strong>, support, or <strong>managed security services</strong> for MS SQL, Geo PITS offers its services tailored to your requirements so that you don&rsquo;t have to worry about database administration or its security.&nbsp; With a balanced combination of a proven delivery model and years of experience managing databases, Geo PITS is the right choice when you go Cloud.</p>
+                                        <div class="entry-post-share-wrap  border-bottom">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 col-md-6">
+                                                    
+                                                    <div class="entry-post-tags">
+                                                        <div class="tagcloud-icon">
+                                                            <i class="fa fa-tags"></i>
+                                                        </div>
+                                                        <div class="tagcloud">
+                                                                                                                            <a href="categories/security.html" class="tags">Security </a>
+                                                                                                                    </div>
+                                                    </div>
+                                                
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div id="entry-post-share" class="entry-post-share">
+                                                        <div class="share-label">
+                                                            Share this post
+                                                        </div>
+                                                        <div class="share-media">
+                                                            <span class="share-icon far fa-share-alt"></span>
+
+                                                            <div class="share-list">
+                                                                <a class="hint--bounce hint--top hint--primary twitter" href="https://twitter.com/intent/tweet?url=https://geopits.com/blog/important-aspects-of-database-security.html" target="_blank" aria-label="Twitter" href="#">
+                                                                    <i class="fab fa-twitter"></i>
+                                                                </a>
+                                                                <a class="hint--bounce hint--top hint--primary facebook" href="https://www.facebook.com/sharer.php?u=https://geopits.com/blog/important-aspects-of-database-security.html" target="_blank" aria-label="Facebook" href="#">
+                                                                    <i class="fab fa-facebook-f"></i>
+                                                                </a>
+                                                                <a class="hint--bounce hint--top hint--primary linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https://geopits.com/blog/important-aspects-of-database-security.html" target="_blank" aria-label="Linkedin" href="#">
+                                                                    <i class="fab fa-linkedin"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                            <div class="entry-author">
+                                            <div class="author-info">
+                                                <div class="author-avatar">
+                                                    <div class="author-social-networks">
+                                                        <div class="inner">
+                                                                                                                                <p></p>
+                                                                                                                                                                                            <p></p>
+                                                                                                                        
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                    <div class="author-description">
+                                                    <h6 class="author-name">Thirunavukkarasu RM</h6>
+
+                                                    <div class="author-biographical-info">
+                                                                                                            </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="related-posts-wrapper">
+
+                                                <h6 class="text-center text-color-primary mb-20">You may be interested in</h6>
+                                            <div class="row">
+                              				                            				                            <div class="col-lg-6 col-md-6 wow move-up animated" style="visibility: visible;">
+                	<!-- ht-box-icon Start -->
+                		<a href="https://geopits.com/blog/backup-database-to-url.html" class="ht-large-box-images style-03">
+                			<div class="large-image-box">
+                				                				        <img class="blog-thumbnail" src="../howdymanage/uploads/image/blogs/copying-multiple-tables-from-one-database-to-another-database-using-import-or-export-wizard/01.jpeg" class="img-fluid" alt="Placeholder Image">
+                				     
+                				<div class="content">
+                					<h5 class="heading">Backup database to URL</h5>
+                					<div class="text"> how to perform SQL database backup using URL with the help of Azure blob storage</div>
+                					<div class="box-images-arrow"><span class="button-text">Read More</span><i class="far fa-long-arrow-right"></i> </div>
+                				</div>
+                			</div>
+                		</a>
+                		<!-- ht-box-icon End -->
+                	</div>
+                	                                        				                            				                            <div class="col-lg-6 col-md-6 wow move-up animated" style="visibility: visible;">
+                	<!-- ht-box-icon Start -->
+                		<a href="https://geopits.com/blog/sql-server-replication-using-a-database-backup.html" class="ht-large-box-images style-03">
+                			<div class="large-image-box">
+                				                				        <img class="blog-thumbnail" src="https://geopits.com/howdymanage/uploads/image/blogs/sql-server-replication-using-a-database-backup/serv-rep-01.jpeg" alt="">
+                				         
+                				<div class="content">
+                					<h5 class="heading">SQL SERVER REPLICATION USING A DATABASE BACKUP</h5>
+                					<div class="text"> This article outlines how to achieve SQL server replication using backup.</div>
+                					<div class="box-images-arrow"><span class="button-text">Read More</span><i class="far fa-long-arrow-right"></i> </div>
+                				</div>
+                			</div>
+                		</a>
+                		<!-- ht-box-icon End -->
+                	</div>
+                	                	    
+                        <div class="col-lg-12 wow move-up animated" style="visibility: visible;">
+                		    <div class="ht-pagination mt-30 pagination justify-content-center">
+                                <div class="pagination-wrapper">
+                                    <ul class="page-pagination">
+                                                                                
+                                                                                
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                	                                        				                                                </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Post info End -->
+                            </div>
+                            <!--===== Single Blog Item End =========-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====================  Blog Area End  ====================-->
+
+
+
+        <!--========== Call to Action Area Start ============-->
+       <div class="cta-image-area_one service-contact-bg section-space--ptb_80">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-8 col-lg-7">
+						<div class="cta-content md-text-center">
+							<h3 class="heading text-white">We run all kinds of Database services that vow your <span class="text-black"> success</span></h3> </div>
+					</div>
+					<div class="col-xl-4 col-lg-5">
+						<div class="cta-button-group--one text-center"> <a href="/contact" class="btn btn--white btn-one"><span class="btn-icon mr-2"><i class="far fa-comment-alt-dots"></i></span>Schedule Free Consultation</a> <a href="/contact" class="btn btn--secondary  btn-two"><span class="btn-icon mr-2"><i class="far fa-info-circle"></i></span>Get Quote</a> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--========== Call to Action Area End ============-->
+
+    <!--====================  footer area ====================-->
+	<div class="footer-area-wrapper bg-gray">
+		<div class="footer-area section-space--ptb_80">
+			<div class="container">
+				<div class="row footer-widget-wrapper">
+					<div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
+						<div class="footer-widget__logo mb-30"> <img src="../assets/images/logo/geopits-logo.svg" height="48" alt=""> </div>
+						<a href="../maps/place/Geo Platinum IT Services - GeoPITS/@13.0251289,77.6590475,15z/data=!4m5!3m4!1s0x00x5c431b47e03582ec!8m2!3d13.0251289!4d77.6590475.html" target="_blank">
+						<ul class="footer-widget__list">
+							<li>Geo Platinum IT Services,</li>
+							<li>No 3, 5th Cross, 1stFloor, P &amp; T Layout,</li>
+							<li>Horamavu, Kalyan Nagar Post,</li>
+							<li>Bengaluru, Karnataka 560043</li>
+						</ul>
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Quick links</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../remote-support-dba-services.html" class="hover-style-link">SQL Server Remote Support</a></li>
+							<li><a href="../sql-server-dba-managed-services.html" class="hover-style-link">SQL Server Managed Services</a></li>
+							<li><a href="../sql-performance-tuning-and-analysis.html" class="hover-style-link">Performance Tuning</a></li>
+							<li><a href="../database-migration-services.html" class="hover-style-link">Database Migration</a></li>
+							<li><a href="../speedcloud-nxtgen-cost-calculator.html" class="hover-style-link">SpeedCloud™ Cost Calculator</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Resources</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../view/ypy9kjpvygmtwtse.html" target="_blank" class="hover-style-link">Company Brochure</a></li>
+							<li><a href="../view/m8tfufz6pdw6gu7m.html" target="_blank" class="hover-style-link">Managed Services Portfolio</a></li>
+							<li><a href="../view/gnubq5zu95hran8g.html" target="_blank" class="hover-style-link">Performance Tuning Portfolio</a></li>
+							<li><a href="../sql-server/index.htm"><span>SQL Features Explorer</span></a></li>
+							<li><a href="../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">More About Us</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../our-story.html" class="hover-style-link">Our Startup Story</a></li>
+							<li><a href="../about-our-team.html" class="hover-style-link">Our Team</a></li>
+							<li><a href="../clients.html" class="hover-style-link">Our Clients</a></li>
+							<li><a href="../careers/index.htm" class="hover-style-link">Careers</a></li>
+							<li><a href="../privacy-policy.html" class="hover-style-link">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Contact</h6>
+						<ul class="footer-widget__list">
+							<li><a href="tel:+919600153444" class="hover-style-link text-color-primary font-weight--bold"><i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp;(+91)96001 53444</a></li>
+							<li><a href="mailto:info@geopits.com" class="hover-style-link text-color-primary"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;info@geopits.com</a></li>
+							<li><a href="mailto:sales@geopits.com" class="hover-style-link text-color-primary"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;sales@geopits.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright-area section-space--pb_30">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 text-center text-md-left"> <span class="copyright-text">&copy; 2022 GeoPITS <a href="#">All Rights Reserved.</a></span> </div>
+					<div class="col-md-6 text-center text-md-right">
+						<ul class="list ht-social-networks solid-rounded-icon">
+							<li class="item">
+								<a href="../geopits_dbas.html" target="_blank" aria-label="Twitter" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-twitter link-icon"></i> </a>
+							</li>
+							<li class="item">
+								<a href="../geopitsOfficial/index.htm" target="_blank" aria-label="Facebook" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-facebook-f link-icon"></i> </a>
+							</li>
+							<li class="item">
+								<a href="https://www.linkedin.com/company/geopits" target="_blank" aria-label="Linkedin" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-linkedin link-icon"></i> </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--====================  End of footer area  ====================-->
+
+	<!--====================  scroll top ====================-->
+	<!--<a href="#" class="scroll-top" id="scroll-top"> <i class="arrow-top fal fa-long-arrow-up"></i> <i class="arrow-bottom fal fa-long-arrow-up"></i> </a>-->
+	<!--====================  End of scroll top  ====================-->
+	    	<!--====================  mobile menu overlay ====================-->
+	<div class="mobile-menu-overlay" id="mobile-menu-overlay">
+		<div class="mobile-menu-overlay__inner">
+			<div class="mobile-menu-overlay__header">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-md-6 col-8">
+							<!-- logo -->
+							<div class="logo">
+								<a href="../index.htm"> <img src="../assets/images/logo/geopits-logo.svg" class="img-fluid" alt=""> </a>
+							</div>
+						</div>
+						<div class="col-md-6 col-4">
+							<!-- mobile menu content -->
+							<div class="mobile-menu-content text-right"> <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-menu-overlay__body">
+				<nav class="offcanvas-navigation">
+					<ul>
+						<li class="has-children"><a href="../services.html">Services</a>
+							<ul class="sub-menu">
+									                <li><a href="../remote-support-dba-services.html"><span>SQL Server DBA Remote Support</span></a></li>
+                                                    <li><a href="../sql-server-dba-managed-services.html"><span>SQL Server Managed Services</span></a></li>
+                                                    <li><a href="../cloud-database-management-services.html"><span>SQL on Cloud</span></a></li>
+                                                    <li><a href="../sql-server-consulting-services.html"><span>Database Consulting</span></a></li>
+                                                    <li><a href="../data-engineering-services.html"><span>Data Engineering</span></a></li>
+                                                    <li><a href="../database-migration-services.html"><span>Database Migration</span></a></li>
+                                                    <li><a href="../sql-performance-tuning-and-analysis.html"><span>Database Performance Tuning</span></a></li>
+                                                    <li><a href="../analytics-and-bi-services.html"><span>Analytics &amp; BI</span></a></li>
+                                                    <li><a href="../data-integration-services.html"><span>Data Integration</span></a></li>
+                                    <li><a href="../application-development-services.html"><span>Enterprise Application Development</span></a></li>
+                                    <li><a href="../speedcloud-nxtgen-cost-calculator.html"><span>SpeedCloud™ Cost Calculator</span></a></li>
+							</ul>
+						</li>
+						<li class="has-children"><a>About</a>
+							<ul class="sub-menu">
+								<li><a href="../our-story.html"><span>The startup story</span></a></li>
+								<li><a href="../about-our-team.html"><span>Our Team</span></a></li>
+								<li><a href="../clients.html"><span>Clients</span></a></li><li><a href="../recognition.html"><span>Recognition</span></a></li>
+								<li><a href="../careers/index.htm" target="_blank" class="hover-style-link"><span>Careers</span></a></li>
+							</ul>
+						</li>
+						<li><a href="../case-studies/index.htm">Case Studies</a></li>
+						<li class="has-children"><a>Resources</a>
+							<ul class="sub-menu">
+								<li><a href="index.htm"><span>Blog</span></a></li>
+								<li><a href="../sql-server/index.htm"><span>SQL Features Explorer</span></a></li>
+								<li><a href="../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+							</ul>
+						</li>
+						<!--<li><a href="/blog/" target="_blank"><span>Blog</span></a></li>-->
+						<li><a href="/contact">Contact Us</a></li>
+						<li><a href="../get-free-db-audit.html">Get Free DB Audit</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!--====================  End of mobile menu overlay  ====================-->    	<!-- JS ============================================ -->
+	<!-- Modernizer JS -->
+	<script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+	<!-- jQuery JS -->
+	<script src="../assets/js/vendor/jquery-3.3.1.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="../assets/js/vendor/bootstrap.min.js"></script>
+	<!-- Swiper Slider JS -->
+	<script src="../assets/js/plugins/swiper.min.js"></script>
+	<!-- Light gallery JS -->
+	<script src="../assets/js/plugins/lightgallery.min.js"></script>
+	<!-- Waypoints JS -->
+	<script src="../assets/js/plugins/waypoints.min.js"></script>
+	<!-- Counter down JS -->
+	<script src="../assets/js/plugins/countdown.min.js"></script>
+	<!-- Isotope JS -->
+	<script src="../assets/js/plugins/isotope.min.js"></script>
+	<!-- Masonry JS -->
+	<script src="../assets/js/plugins/masonry.min.js"></script>
+	<!-- ImagesLoaded JS -->
+	<script src="../assets/js/plugins/images-loaded.min.js"></script>
+	<!-- Wavify JS -->
+	<script src="../assets/js/plugins/wavify.js"></script>
+	<!-- jQuery Wavify JS -->
+	<script src="../assets/js/plugins/jquery.wavify.js"></script>
+	<!-- circle progress JS -->
+	<script src="../assets/js/plugins/circle-progress.min.js"></script>
+	<!-- counterup JS -->
+	<script src="../assets/js/plugins/counterup.min.js"></script>
+	<!-- wow JS -->
+	<script src="../assets/js/plugins/wow.min.js"></script>
+	<!-- animation text JS -->
+	<script src="../assets/js/plugins/animation-text.min.js"></script>
+	<!-- Vivus JS -->
+	<script src="../assets/js/plugins/vivus.min.js"></script>
+	<!-- Some plugins JS -->
+	<script src="../assets/js/plugins/some-plugins.js"></script>
+	<!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
+	<!--
+    <script src="/assets/js/plugins/plugins.min.js"></script>
+    -->
+	<!-- Main JS -->
+	<script src="../assets/js/main.js"></script>
+	
+	<!-- Select2 JS -->
+	<script src="../assets/js/select2.min.js"></script>
+	<script type="text/javascript">
+_linkedin_partner_id = "3609132";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="../d/px/index.htm.gif?pid=3609132&fmt=gif">
+</noscript></div></body>
+
+</html>
+
+
+<!-- Page generated by CouchCMS - Simple Open-Source Content Management -->

@@ -1,0 +1,854 @@
+﻿
+
+
+<!--==================== Blog Individual Page Code ====================-->
+                        
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>How to connect to the contained database without creating the login and user on secondary instance | Geopits</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="How to connect to the contained database without creating the login and user on secondary instance | Geopits">
+	<meta name="description" content="How to connect to the contained database without creating the login and user on secondary instance.">
+	<link rel="canonical" href="contained-database-in-sql-server.html">
+	<meta property="og:title" content="How to connect to the contained database without creating the login and user on secondary instance | Geopits">
+    <meta property="og:description" content="How to connect to the contained database without creating the login and user on secondary instance.">
+    <meta property="og:image" content="https://geopits.com/howdymanage/uploads/image/blogs/contained-database-in-sql-server/01.jpeg">
+    
+      	<link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="../assets/images/favicon.png">
+	<!-- CSS
+        ============================================ -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css">
+	<!-- Font Family CSS -->
+	<link rel="stylesheet" href="../assets/css/vendor/cerebrisans.css">
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="../assets/css/vendor/fontawesome-all.min.css">
+	<!-- Swiper slider CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/swiper.min.css">
+	<!-- animate-text CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/animate-text.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/animate.min.css">
+	<!-- Select2 CSS -->
+	<link rel="stylesheet" href="../assets/css/select2.min.css">
+	<!-- Light gallery CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/lightgallery.min.css">
+	<!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
+	<!--
+        <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+        -->
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css"> 
+
+	<!-- Start of Async Drift Code -->
+<!-- End of Async Drift Code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="../gtag/js.js?id=UA-100125040-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-100125040-1');
+</script>
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://google.com/article"
+          },
+          "headline": "How to connect to the contained database without creating the login and user on secondary instance | Geopits",
+          "image": [
+            "https://geopits.com/howdymanage/uploads/image/blogs/contained-database-in-sql-server/01.jpeg"
+          ],
+          "datePublished": "2021-04-23 13:16:49",
+          "dateModified": "July 05, 2021",
+          "author": {
+            "@type": "Person",
+            "name": "Naresh"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "GeoPITS",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://staginggeopits.cyces.co/assets/images/logo/geopits-logo.svg"
+            }
+          }
+        }
+    </script>
+    <style>
+        .post-excerpt p{
+            font-size: 19px;
+        }
+        .related-posts-wrapper{
+            margin-top: 45px;
+        }
+         blockquote {
+            padding-left: 20px;
+            margin: 30px 0 !important;
+            font-size: 19px;
+            font-weight: normal;
+        }
+        img{
+            max-width: 100%;
+            height: auto !important;
+        }
+        .post-excerpt h1{
+            font-size: 40px;
+        }
+        
+        .post-excerpt h2{
+            font-size: 22px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-excerpt h3{
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-excerpt h3,h4,h5,h6{
+            font-size: 19px;
+        }
+        
+        .post-excerpt ol,.post-excerpt ul{
+            font-size: 19px;
+        }
+        
+        .post-excerpt ul{
+            padding-left: 40px;
+        }
+        
+        .tags::after{
+            content: ",";
+        }
+        .tags:last-of-type::after{
+            content: " ";
+        }
+        .post-info ul li{
+            list-style: disc;
+            margin-left: 10px;
+            font-size: 19px;
+        }
+        
+        figure{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        figcaption{
+            text-align:center;
+        }
+        .post-excerpt a{
+            color: #0895D5;
+        }
+        .post-excerpt a:hover{
+            text-decoration:underline;
+        }
+         .ht-large-box-images.style-03 .content .heading{
+        min-height: 90px !important;
+        }
+         .ht-large-box-images.style-03 .content .heading{
+            -webkit-line-clamp: 3
+        }
+         div.text{
+            display: -webkit-box;
+            -webkit-line-clamp: 3 !important;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            font-weight: normal !important;
+        }
+        div.text strong{
+            font-weight: normal;
+        }
+        h5.heading{
+            text-transform: capitalize !important;
+        }
+        .box-images-arrow span.button-text{
+            margin-right:4px;
+        }
+        .blog-thumbnail{
+            height:250px !important; 
+            object-fit:cover; 
+            width:100%
+        }
+        .blog-pages-wrapper .breadcrumb{
+            background: none;
+        }
+        .blog-pages-wrapper .breadcrumb .breadcrumb-item {
+            color : #1CAD45;
+        }
+        .blog-pages-wrapper .breadcrumb .breadcrumb-item.active{
+            color: #0895D5;
+        }
+        .breadcrumb-item+.breadcrumb-item::before{
+            color : #1CAD45;
+        }
+    </style>
+</head>
+    <body>
+    
+<!--====================  header area ====================-->
+	<div class="header-area header-area--default">
+		<!-- Header Top Wrap Start -->
+	        	<div class="header-top-wrap bg-theme-default border-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="text-center top-message text-white">
+						    <a href="../sql-compare.html" target="_blank" rel="nofollow noopener"> Get a free demo of our new SQL Compare Tool ➔  </a>
+						 </p>
+					</div>
+				</div>
+			</div>
+		</div>		<!-- Header Top Wrap End -->
+		<!-- Header Bottom Wrap Start -->
+		<div class="header-bottom-wrap  bg-white header-sticky">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="header position-relative">
+							<!-- brand logo -->
+							<div class="header__logo">
+								<a href="../index.htm"> <img src="../assets/images/logo/geopits-logo.svg" class="img-fluid" alt="GeoPITS Logo"> </a>
+							</div>
+							<div class="header-right">
+								<!-- navigation menu -->
+								<div class="header__navigation menu-style-three d-none d-xl-block">
+									<nav class="navigation-menu">
+										<ul class="d-flex align-items-center">
+											<li class="has-children has-children--multilevel-submenu"> <a href="../services.html"><span>Services</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu min-width-304">
+                                                    <li><a href="../remote-support-dba-services.html"><span>SQL Server DBA Remote Support</span></a></li>
+                                                    <li><a href="../sql-server-dba-managed-services.html"><span>SQL Server Managed Services</span></a></li>
+                                                    <li><a href="../cloud-database-management-services.html"><span>SQL on Cloud</span></a></li>
+                                                    <li><a href="../sql-server-consulting-services.html"><span>Database Consulting</span></a></li>
+                                                    <li><a href="../data-engineering-services.html"><span>Data Engineering</span></a></li>
+                                                    <li><a href="../database-migration-services.html"><span>Database Migration</span></a></li>
+                                                    <li><a href="../sql-performance-tuning-and-analysis.html"><span>Database Performance Tuning</span></a></li>
+                                                    <li><a href="../analytics-and-bi-services.html"><span>Analytics &amp; BI</span></a></li>
+                                                    <li><a href="../data-integration-services.html"><span>Data Integration</span></a></li>
+                                                    <li><a href="../application-development-services.html"><span>Enterprise Application Development</span></a></li>
+                                                    <li><a href="../speedcloud-servers.html"><span>SpeedCloud™</span></a></li>
+                                                    <li><a href="../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+                                                </ul>
+											</li>
+											<li class="has-children has-children--multilevel-submenu"><a><span>About</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu">
+													<li><a href="../our-story.html"><span>The startup story</span></a></li>
+													<li><a href="../about-our-team.html"><span>Our Team</span></a></li>
+													<li><a href="../clients.html"><span>Clients</span></a></li>
+													
+													<li><a href="../recognition.html"><span>Recognition</span></a></li>
+													<li><a href="../careers/index.htm" class="hover-style-link"><span>Careers</span></a></li>
+												</ul>
+											</li>
+											<li><a href="../case-studies/index.htm"><span>Case Studies</span></a></li>
+											<li class="has-children has-children--multilevel-submenu"><a><span>Resources</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu">
+													<li><a href="index.htm"><span>Blog</span></a></li>
+													<li><a href="../sql-server/index.htm"><span>SQL Features Explorer</span></a></li>
+												</ul>
+											</li>
+											<!--<li><a href=""><span>Blog</span></a></li>-->
+											<li><a href="/contact"><span>Contact Us</span></a></li>
+											<li><a href="../get-free-db-audit.html" class="ht-btn ht-btn-sm text-white">Get Free DB Audit</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!-- mobile menu -->
+								<div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger"><i></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header Bottom Wrap End -->
+	</div>
+	<!--====================  End of header area  ====================-->
+	    <div class="site-wrapper-reveal">
+        <!--====================  Blog Area Start ====================-->
+        <div class="blog-pages-wrapper py-3">
+            <div class="container">
+                
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.htm">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.htm">Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contained database in SQL server</li>
+                  </ol>
+                </nav>
+                
+                <section class="single-blog-item mb-5">
+                    <section class="post-info">
+                    
+                        
+                        <h1 class="post-title text-center">
+                            
+                             Contained database in SQL server                            
+                        </h1>
+                        
+                    <div class="post-meta mt-20 justify-content-center">
+                        <div class="post-author">
+                                Naresh                        </div>
+                        <div class="post-date">
+                            <span class="far fa-calendar meta-icon"></span>
+                            Apr, 2021                        </div>
+                    </div>
+                </section>
+                </section>
+                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Post Feature Start -->
+                       
+                        <!-- Post Feature End -->
+                    </div>
+                    <div class="col-lg-8 ml-auto mr-auto">
+                        <div class="main-blog-wrap">
+                            <!--======= Single Blog Item Start ========-->
+                            <div class="single-blog-item  wow move-up">
+
+                                <!-- Post info Start -->
+                                <div class="post-info lg-blog-post-info">
+                                    
+                                    <div class="post-excerpt mt-15">
+                                        <p style="text-align: center;"><img alt="" src="../howdymanage/uploads/image/blogs/contained-database-in-sql-server/01.jpeg" style="width: 600px; height: 600px;"></p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="" id="c441">This blog is about contained database a SQL server feature introduce from SQL server 2012. This contained database are different from regular uncontained databases. Contained database don&rsquo;t depend on SQL server instance. it&rsquo;s configuration, database setting, meta data all contained within the database which includes user information.</p>
+
+<p data-selectable-paragraph="" id="b5a2">The issue with regular uncontained databases is, when you move your database from instance to another, you have to move all the user of that database. Sometimes there will be orphan users for that you have to write and run the script. So in contained database you will not get this type of issue.</p>
+
+<p data-selectable-paragraph="" id="3dd6">Before you go to create contained database you need to enable contained database feature, by default this feature is not enabled.</p>
+
+<p data-selectable-paragraph="" id="2e1e"><strong>To Enable Contained database feature:</strong></p>
+
+<p data-selectable-paragraph="" id="0342">1. Right click on instance &rarr; click properties</p>
+
+<p data-selectable-paragraph="" id="dbe5">2. In left pane click Advance</p>
+
+<p data-selectable-paragraph="" id="b9a5">Change Enable Contained Databases as true and click ok.</p>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/02.png" style="width: 492px; height: 446px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="">Or you can use sp_configure stored procedure to enable contained databases on the instance, as per below query:</p>
+
+<blockquote>
+<p data-selectable-paragraph="" id="b754">EXEC sp_configure &lsquo;show advanced&rsquo;, 1</p>
+
+<p data-selectable-paragraph="" id="2e2b">GO</p>
+
+<p data-selectable-paragraph="" id="0437">RECONFIGURE</p>
+
+<p data-selectable-paragraph="" id="a416">GO</p>
+
+<p data-selectable-paragraph="" id="37ef">EXEC sp_configure &lsquo;contained database authentication&rsquo;, 1</p>
+
+<p data-selectable-paragraph="" id="df97">GO</p>
+
+<p data-selectable-paragraph="" id="e170">RECONFIGURE</p>
+
+<p data-selectable-paragraph="" id="7348">GO</p>
+</blockquote>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/03.png" style="width: 624px; height: 341px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="" id="72f3">After enabling the contained databases feature you can head to create contained database.</p>
+
+<p data-selectable-paragraph="" id="93b8"><strong>To create contained database:</strong></p>
+
+<p data-selectable-paragraph="" id="9646">1. In object explorer Right click on database &rarr; New database and provide a name for the database.</p>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/04.png" style="width: 532px; height: 410px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="" id="52cd">2. Click option in the left pane and select partial in containment type.</p>
+
+<p data-selectable-paragraph="" id="75c9">3. Click OK.</p>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/05.png" style="width: 474px; height: 429px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="" id="0371">Now we have to create a user for this database.</p>
+
+<p data-selectable-paragraph="" id="2219"><strong>To create a user</strong></p>
+
+<p data-selectable-paragraph="" id="dfe9">1. Expand Database &rarr; Expand the contained database which you created</p>
+
+<p data-selectable-paragraph="" id="1374">2. Then expand security</p>
+
+<p data-selectable-paragraph="" id="9b6d">3. Right click Users &rarr; New user</p>
+
+<p data-selectable-paragraph="" id="7cff">4. Provide user name and password</p>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/06.png" style="width: 624px; height: 565px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="">5. In Owned schema select db_owne</p>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/07.png" style="width: 624px; height: 565px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="" id="68a2">6. Click ok.</p>
+
+<p data-selectable-paragraph="" id="fa7b">Now to check the user access</p>
+
+<ol>
+	<li data-selectable-paragraph="" id="c375">Click connect and enter username and password.</li>
+</ol>
+
+<p style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/08.png" style="width: 477px; height: 315px;"></p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p>If you click connect you will get the following error. &lsquo;Login failed for user&rsquo;</p>
+
+<p style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/09.png" style="width: 607px; height: 156px;"></p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p>Click Options and go to connections properties and type contained database name in connect to database and then click connect.</p>
+
+<p style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/10.png" style="width: 477px; height: 520px;"></p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p>Now you will be connected only to that database without server login.</p>
+
+<p style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/11.png" style="width: 465px; height: 326px;"></p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="" id="78fd">You can also check by taking the backup of this contained database and restore to another instance and no need to create this user on another instance.</p>
+
+<p data-selectable-paragraph="" id="4c39"><strong>To take backup of Contained Database:</strong></p>
+
+<p data-selectable-paragraph="" id="be13">1. Right click that database &rarr; tasks &rarr; Backup</p>
+
+<p data-selectable-paragraph="" id="9a45">2. Choose the backup path</p>
+
+<p data-selectable-paragraph="" id="fa16">3. Click ok.</p>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/12.png" style="width: 624px; height: 458px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="" id="ef75"><strong>To restore the Contained Database in another instance:</strong></p>
+
+<p data-selectable-paragraph="" id="6a88">1. Right click Databases &rarr; Restore Database</p>
+
+<p data-selectable-paragraph="" id="f2be">2. Select the backup file from that path in Device</p>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/13.png" style="width: 624px; height: 528px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="">3. In Files select Relocate all files to folder</p>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/14.png" style="width: 624px; height: 528px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="" id="1348">4. Click ok.</p>
+
+<p data-selectable-paragraph="" id="026f">Now you don&rsquo;t have login or that user in this instance but you can connect to this database using that user</p>
+
+<p data-selectable-paragraph="" id="d33f">1. Click connect from object explorer</p>
+
+<p data-selectable-paragraph="" id="3565">2. Enter the username and password</p>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/15.png" style="width: 477px; height: 315px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="" id="70b0">3. Click option</p>
+
+<p data-selectable-paragraph="" id="0b7a">4. Enter the contained database name in Connect to database:</p>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/16.png" style="width: 477px; height: 520px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="">5. Click Connect.</p>
+
+<p data-selectable-paragraph="" style="text-align: center;"><img alt="" src="/howdymanage/uploads/image/blogs/contained-database-in-sql-server/17.png" style="width: 504px; height: 335px;"></p>
+
+<p data-selectable-paragraph="" style="text-align: center;">&nbsp;</p>
+
+<p data-selectable-paragraph="">That&rsquo;s it now you are able to connect to the contained database without creating the login and user on secondary instance.</p>
+                                        <div class="entry-post-share-wrap  border-bottom">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 col-md-6">
+                                                    
+                                                    <div class="entry-post-tags">
+                                                        <div class="tagcloud-icon">
+                                                            <i class="fa fa-tags"></i>
+                                                        </div>
+                                                        <div class="tagcloud">
+                                                                                                                            <a href="categories/new-features.html" class="tags">New Features </a>
+                                                                                                                    </div>
+                                                    </div>
+                                                
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div id="entry-post-share" class="entry-post-share">
+                                                        <div class="share-label">
+                                                            Share this post
+                                                        </div>
+                                                        <div class="share-media">
+                                                            <span class="share-icon far fa-share-alt"></span>
+
+                                                            <div class="share-list">
+                                                                <a class="hint--bounce hint--top hint--primary twitter" href="https://twitter.com/intent/tweet?url=https://geopits.com/blog/contained-database-in-sql-server.html" target="_blank" aria-label="Twitter" href="#">
+                                                                    <i class="fab fa-twitter"></i>
+                                                                </a>
+                                                                <a class="hint--bounce hint--top hint--primary facebook" href="https://www.facebook.com/sharer.php?u=https://geopits.com/blog/contained-database-in-sql-server.html" target="_blank" aria-label="Facebook" href="#">
+                                                                    <i class="fab fa-facebook-f"></i>
+                                                                </a>
+                                                                <a class="hint--bounce hint--top hint--primary linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https://geopits.com/blog/contained-database-in-sql-server.html" target="_blank" aria-label="Linkedin" href="#">
+                                                                    <i class="fab fa-linkedin"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                            <div class="entry-author">
+                                            <div class="author-info">
+                                                <div class="author-avatar">
+                                                    <div class="author-social-networks">
+                                                        <div class="inner">
+                                                                                                                                <p></p>
+                                                                                                                                                                                            <p></p>
+                                                                                                                        
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                    <div class="author-description">
+                                                    <h6 class="author-name">Naresh</h6>
+
+                                                    <div class="author-biographical-info">
+                                                                                                            </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="related-posts-wrapper">
+
+                                                <h6 class="text-center text-color-primary mb-20">You may be interested in</h6>
+                                            <div class="row">
+                              				                            				                            <div class="col-lg-6 col-md-6 wow move-up animated" style="visibility: visible;">
+                	<!-- ht-box-icon Start -->
+                		<a href="https://geopits.com/blog/security-in-sql-azure.html" class="ht-large-box-images style-03">
+                			<div class="large-image-box">
+                				                				        <img class="blog-thumbnail" src="https://geopits.com/howdymanage/uploads/image/blogs/security-in-sql-azure/security-sql-azure-1.jpeg" alt="">
+                				         
+                				<div class="content">
+                					<h5 class="heading">Security in SQL Azure</h5>
+                					<div class="text"> This article is a quick walk-through of some of the key security features which are available in SQL Azure.</div>
+                					<div class="box-images-arrow"><span class="button-text">Read More</span><i class="far fa-long-arrow-right"></i> </div>
+                				</div>
+                			</div>
+                		</a>
+                		<!-- ht-box-icon End -->
+                	</div>
+                	                                        				                            				                            <div class="col-lg-6 col-md-6 wow move-up animated" style="visibility: visible;">
+                	<!-- ht-box-icon Start -->
+                		<a href="https://geopits.com/blog/identify-and-fix-the-orphaned-users-in-sql-server.html" class="ht-large-box-images style-03">
+                			<div class="large-image-box">
+                				                				        <img class="blog-thumbnail" src="https://geopits.com/howdymanage/uploads/image/blogs/identify-and-fix-the-orphaned-users-in-sql-server/orphan-user-01.jpeg" alt="">
+                				         
+                				<div class="content">
+                					<h5 class="heading">IDENTIFY AND FIX THE ORPHANED USERS IN SQL SERVER:</h5>
+                					<div class="text"> </div>
+                					<div class="box-images-arrow"><span class="button-text">Read More</span><i class="far fa-long-arrow-right"></i> </div>
+                				</div>
+                			</div>
+                		</a>
+                		<!-- ht-box-icon End -->
+                	</div>
+                	                	    
+                        <div class="col-lg-12 wow move-up animated" style="visibility: visible;">
+                		    <div class="ht-pagination mt-30 pagination justify-content-center">
+                                <div class="pagination-wrapper">
+                                    <ul class="page-pagination">
+                                                                                
+                                                                                
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                	                                        				                                                </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Post info End -->
+                            </div>
+                            <!--===== Single Blog Item End =========-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====================  Blog Area End  ====================-->
+
+
+
+        <!--========== Call to Action Area Start ============-->
+       <div class="cta-image-area_one service-contact-bg section-space--ptb_80">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-8 col-lg-7">
+						<div class="cta-content md-text-center">
+							<h3 class="heading text-white">We run all kinds of Database services that vow your <span class="text-black"> success</span></h3> </div>
+					</div>
+					<div class="col-xl-4 col-lg-5">
+						<div class="cta-button-group--one text-center"> <a href="/contact" class="btn btn--white btn-one"><span class="btn-icon mr-2"><i class="far fa-comment-alt-dots"></i></span>Schedule Free Consultation</a> <a href="/contact" class="btn btn--secondary  btn-two"><span class="btn-icon mr-2"><i class="far fa-info-circle"></i></span>Get Quote</a> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--========== Call to Action Area End ============-->
+
+    <!--====================  footer area ====================-->
+	<div class="footer-area-wrapper bg-gray">
+		<div class="footer-area section-space--ptb_80">
+			<div class="container">
+				<div class="row footer-widget-wrapper">
+					<div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
+						<div class="footer-widget__logo mb-30"> <img src="../assets/images/logo/geopits-logo.svg" height="48" alt=""> </div>
+						<a href="../maps/place/Geo Platinum IT Services - GeoPITS/@13.0251289,77.6590475,15z/data=!4m5!3m4!1s0x00x5c431b47e03582ec!8m2!3d13.0251289!4d77.6590475.html" target="_blank">
+						<ul class="footer-widget__list">
+							<li>Geo Platinum IT Services,</li>
+							<li>No 3, 5th Cross, 1stFloor, P &amp; T Layout,</li>
+							<li>Horamavu, Kalyan Nagar Post,</li>
+							<li>Bengaluru, Karnataka 560043</li>
+						</ul>
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Quick links</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../remote-support-dba-services.html" class="hover-style-link">SQL Server Remote Support</a></li>
+							<li><a href="../sql-server-dba-managed-services.html" class="hover-style-link">SQL Server Managed Services</a></li>
+							<li><a href="../sql-performance-tuning-and-analysis.html" class="hover-style-link">Performance Tuning</a></li>
+							<li><a href="../database-migration-services.html" class="hover-style-link">Database Migration</a></li>
+							<li><a href="../speedcloud-nxtgen-cost-calculator.html" class="hover-style-link">SpeedCloud™ Cost Calculator</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Resources</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../view/ypy9kjpvygmtwtse.html" target="_blank" class="hover-style-link">Company Brochure</a></li>
+							<li><a href="../view/m8tfufz6pdw6gu7m.html" target="_blank" class="hover-style-link">Managed Services Portfolio</a></li>
+							<li><a href="../view/gnubq5zu95hran8g.html" target="_blank" class="hover-style-link">Performance Tuning Portfolio</a></li>
+							<li><a href="../sql-server/index.htm"><span>SQL Features Explorer</span></a></li>
+							<li><a href="../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">More About Us</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../our-story.html" class="hover-style-link">Our Startup Story</a></li>
+							<li><a href="../about-our-team.html" class="hover-style-link">Our Team</a></li>
+							<li><a href="../clients.html" class="hover-style-link">Our Clients</a></li>
+							<li><a href="../careers/index.htm" class="hover-style-link">Careers</a></li>
+							<li><a href="../privacy-policy.html" class="hover-style-link">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Contact</h6>
+						<ul class="footer-widget__list">
+							<li><a href="tel:+919600153444" class="hover-style-link text-color-primary font-weight--bold"><i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp;(+91)96001 53444</a></li>
+							<li><a href="mailto:info@geopits.com" class="hover-style-link text-color-primary"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;info@geopits.com</a></li>
+							<li><a href="mailto:sales@geopits.com" class="hover-style-link text-color-primary"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;sales@geopits.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright-area section-space--pb_30">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 text-center text-md-left"> <span class="copyright-text">&copy; 2022 GeoPITS <a href="#">All Rights Reserved.</a></span> </div>
+					<div class="col-md-6 text-center text-md-right">
+						<ul class="list ht-social-networks solid-rounded-icon">
+							<li class="item">
+								<a href="../geopits_dbas.html" target="_blank" aria-label="Twitter" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-twitter link-icon"></i> </a>
+							</li>
+							<li class="item">
+								<a href="../geopitsOfficial/index.htm" target="_blank" aria-label="Facebook" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-facebook-f link-icon"></i> </a>
+							</li>
+							<li class="item">
+								<a href="https://www.linkedin.com/company/geopits" target="_blank" aria-label="Linkedin" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-linkedin link-icon"></i> </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--====================  End of footer area  ====================-->
+
+	<!--====================  scroll top ====================-->
+	<!--<a href="#" class="scroll-top" id="scroll-top"> <i class="arrow-top fal fa-long-arrow-up"></i> <i class="arrow-bottom fal fa-long-arrow-up"></i> </a>-->
+	<!--====================  End of scroll top  ====================-->
+	    	<!--====================  mobile menu overlay ====================-->
+	<div class="mobile-menu-overlay" id="mobile-menu-overlay">
+		<div class="mobile-menu-overlay__inner">
+			<div class="mobile-menu-overlay__header">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-md-6 col-8">
+							<!-- logo -->
+							<div class="logo">
+								<a href="../index.htm"> <img src="../assets/images/logo/geopits-logo.svg" class="img-fluid" alt=""> </a>
+							</div>
+						</div>
+						<div class="col-md-6 col-4">
+							<!-- mobile menu content -->
+							<div class="mobile-menu-content text-right"> <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-menu-overlay__body">
+				<nav class="offcanvas-navigation">
+					<ul>
+						<li class="has-children"><a href="../services.html">Services</a>
+							<ul class="sub-menu">
+									                <li><a href="../remote-support-dba-services.html"><span>SQL Server DBA Remote Support</span></a></li>
+                                                    <li><a href="../sql-server-dba-managed-services.html"><span>SQL Server Managed Services</span></a></li>
+                                                    <li><a href="../cloud-database-management-services.html"><span>SQL on Cloud</span></a></li>
+                                                    <li><a href="../sql-server-consulting-services.html"><span>Database Consulting</span></a></li>
+                                                    <li><a href="../data-engineering-services.html"><span>Data Engineering</span></a></li>
+                                                    <li><a href="../database-migration-services.html"><span>Database Migration</span></a></li>
+                                                    <li><a href="../sql-performance-tuning-and-analysis.html"><span>Database Performance Tuning</span></a></li>
+                                                    <li><a href="../analytics-and-bi-services.html"><span>Analytics &amp; BI</span></a></li>
+                                                    <li><a href="../data-integration-services.html"><span>Data Integration</span></a></li>
+                                    <li><a href="../application-development-services.html"><span>Enterprise Application Development</span></a></li>
+                                    <li><a href="../speedcloud-nxtgen-cost-calculator.html"><span>SpeedCloud™ Cost Calculator</span></a></li>
+							</ul>
+						</li>
+						<li class="has-children"><a>About</a>
+							<ul class="sub-menu">
+								<li><a href="../our-story.html"><span>The startup story</span></a></li>
+								<li><a href="../about-our-team.html"><span>Our Team</span></a></li>
+								<li><a href="../clients.html"><span>Clients</span></a></li><li><a href="../recognition.html"><span>Recognition</span></a></li>
+								<li><a href="../careers/index.htm" target="_blank" class="hover-style-link"><span>Careers</span></a></li>
+							</ul>
+						</li>
+						<li><a href="../case-studies/index.htm">Case Studies</a></li>
+						<li class="has-children"><a>Resources</a>
+							<ul class="sub-menu">
+								<li><a href="index.htm"><span>Blog</span></a></li>
+								<li><a href="../sql-server/index.htm"><span>SQL Features Explorer</span></a></li>
+								<li><a href="../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+							</ul>
+						</li>
+						<!--<li><a href="/blog/" target="_blank"><span>Blog</span></a></li>-->
+						<li><a href="/contact">Contact Us</a></li>
+						<li><a href="../get-free-db-audit.html">Get Free DB Audit</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!--====================  End of mobile menu overlay  ====================-->    	<!-- JS ============================================ -->
+	<!-- Modernizer JS -->
+	<script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+	<!-- jQuery JS -->
+	<script src="../assets/js/vendor/jquery-3.3.1.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="../assets/js/vendor/bootstrap.min.js"></script>
+	<!-- Swiper Slider JS -->
+	<script src="../assets/js/plugins/swiper.min.js"></script>
+	<!-- Light gallery JS -->
+	<script src="../assets/js/plugins/lightgallery.min.js"></script>
+	<!-- Waypoints JS -->
+	<script src="../assets/js/plugins/waypoints.min.js"></script>
+	<!-- Counter down JS -->
+	<script src="../assets/js/plugins/countdown.min.js"></script>
+	<!-- Isotope JS -->
+	<script src="../assets/js/plugins/isotope.min.js"></script>
+	<!-- Masonry JS -->
+	<script src="../assets/js/plugins/masonry.min.js"></script>
+	<!-- ImagesLoaded JS -->
+	<script src="../assets/js/plugins/images-loaded.min.js"></script>
+	<!-- Wavify JS -->
+	<script src="../assets/js/plugins/wavify.js"></script>
+	<!-- jQuery Wavify JS -->
+	<script src="../assets/js/plugins/jquery.wavify.js"></script>
+	<!-- circle progress JS -->
+	<script src="../assets/js/plugins/circle-progress.min.js"></script>
+	<!-- counterup JS -->
+	<script src="../assets/js/plugins/counterup.min.js"></script>
+	<!-- wow JS -->
+	<script src="../assets/js/plugins/wow.min.js"></script>
+	<!-- animation text JS -->
+	<script src="../assets/js/plugins/animation-text.min.js"></script>
+	<!-- Vivus JS -->
+	<script src="../assets/js/plugins/vivus.min.js"></script>
+	<!-- Some plugins JS -->
+	<script src="../assets/js/plugins/some-plugins.js"></script>
+	<!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
+	<!--
+    <script src="/assets/js/plugins/plugins.min.js"></script>
+    -->
+	<!-- Main JS -->
+	<script src="../assets/js/main.js"></script>
+	
+	<!-- Select2 JS -->
+	<script src="../assets/js/select2.min.js"></script>
+	<script type="text/javascript">
+_linkedin_partner_id = "3609132";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="../d/px/index.htm.gif?pid=3609132&fmt=gif">
+</noscript></div></body>
+
+</html>
+
+
+<!-- Page generated by CouchCMS - Simple Open-Source Content Management -->
