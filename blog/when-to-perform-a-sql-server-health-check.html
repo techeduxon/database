@@ -1,0 +1,758 @@
+﻿
+
+
+<!--==================== Blog Individual Page Code ====================-->
+                        
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>When to perform a SQL server health check?</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="When to perform a SQL server health check?">
+	<meta name="description" content="A healthy database is essential for staff productivity, customer satisfaction and keeping your company’s efficiency high">
+	<link rel="canonical" href="when-to-perform-a-sql-server-health-check.html">
+	<meta property="og:title" content="When to perform a SQL server health check?">
+    <meta property="og:description" content="A healthy database is essential for staff productivity, customer satisfaction and keeping your company’s efficiency high">
+    <meta property="og:image" content="https://geopits.com/howdymanage/uploads/image/performance-health-check-img.jpeg">
+    
+      	<link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="../assets/images/favicon.png">
+	<!-- CSS
+        ============================================ -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css">
+	<!-- Font Family CSS -->
+	<link rel="stylesheet" href="../assets/css/vendor/cerebrisans.css">
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="../assets/css/vendor/fontawesome-all.min.css">
+	<!-- Swiper slider CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/swiper.min.css">
+	<!-- animate-text CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/animate-text.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/animate.min.css">
+	<!-- Select2 CSS -->
+	<link rel="stylesheet" href="../assets/css/select2.min.css">
+	<!-- Light gallery CSS -->
+	<link rel="stylesheet" href="../assets/css/plugins/lightgallery.min.css">
+	<!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
+	<!--
+        <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+        -->
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css"> 
+
+	<!-- Start of Async Drift Code -->
+<!-- End of Async Drift Code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="../gtag/js.js?id=UA-100125040-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-100125040-1');
+</script>
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://google.com/article"
+          },
+          "headline": "When to perform a SQL server health check?",
+          "image": [
+            "https://geopits.com/howdymanage/uploads/image/performance-health-check-img.jpeg"
+          ],
+          "datePublished": "2021-04-27 20:45:07",
+          "dateModified": "June 07, 2021",
+          "author": {
+            "@type": "Person",
+            "name": "Saranya"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "GeoPITS",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://staginggeopits.cyces.co/assets/images/logo/geopits-logo.svg"
+            }
+          }
+        }
+    </script>
+    <style>
+        .post-excerpt p{
+            font-size: 19px;
+        }
+        .related-posts-wrapper{
+            margin-top: 45px;
+        }
+         blockquote {
+            padding-left: 20px;
+            margin: 30px 0 !important;
+            font-size: 19px;
+            font-weight: normal;
+        }
+        img{
+            max-width: 100%;
+            height: auto !important;
+        }
+        .post-excerpt h1{
+            font-size: 40px;
+        }
+        
+        .post-excerpt h2{
+            font-size: 22px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-excerpt h3{
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-excerpt h3,h4,h5,h6{
+            font-size: 19px;
+        }
+        
+        .post-excerpt ol,.post-excerpt ul{
+            font-size: 19px;
+        }
+        
+        .post-excerpt ul{
+            padding-left: 40px;
+        }
+        
+        .tags::after{
+            content: ",";
+        }
+        .tags:last-of-type::after{
+            content: " ";
+        }
+        .post-info ul li{
+            list-style: disc;
+            margin-left: 10px;
+            font-size: 19px;
+        }
+        
+        figure{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        figcaption{
+            text-align:center;
+        }
+        .post-excerpt a{
+            color: #0895D5;
+        }
+        .post-excerpt a:hover{
+            text-decoration:underline;
+        }
+         .ht-large-box-images.style-03 .content .heading{
+        min-height: 90px !important;
+        }
+         .ht-large-box-images.style-03 .content .heading{
+            -webkit-line-clamp: 3
+        }
+         div.text{
+            display: -webkit-box;
+            -webkit-line-clamp: 3 !important;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            font-weight: normal !important;
+        }
+        div.text strong{
+            font-weight: normal;
+        }
+        h5.heading{
+            text-transform: capitalize !important;
+        }
+        .box-images-arrow span.button-text{
+            margin-right:4px;
+        }
+        .blog-thumbnail{
+            height:250px !important; 
+            object-fit:cover; 
+            width:100%
+        }
+        .blog-pages-wrapper .breadcrumb{
+            background: none;
+        }
+        .blog-pages-wrapper .breadcrumb .breadcrumb-item {
+            color : #1CAD45;
+        }
+        .blog-pages-wrapper .breadcrumb .breadcrumb-item.active{
+            color: #0895D5;
+        }
+        .breadcrumb-item+.breadcrumb-item::before{
+            color : #1CAD45;
+        }
+    </style>
+</head>
+    <body>
+    
+<!--====================  header area ====================-->
+	<div class="header-area header-area--default">
+		<!-- Header Top Wrap Start -->
+	        	<div class="header-top-wrap bg-theme-default border-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="text-center top-message text-white">
+						    <a href="../sql-compare.html" target="_blank" rel="nofollow noopener"> Get a free demo of our new SQL Compare Tool ➔  </a>
+						 </p>
+					</div>
+				</div>
+			</div>
+		</div>		<!-- Header Top Wrap End -->
+		<!-- Header Bottom Wrap Start -->
+		<div class="header-bottom-wrap  bg-white header-sticky">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="header position-relative">
+							<!-- brand logo -->
+							<div class="header__logo">
+								<a href="../index.htm"> <img src="../assets/images/logo/geopits-logo.svg" class="img-fluid" alt="GeoPITS Logo"> </a>
+							</div>
+							<div class="header-right">
+								<!-- navigation menu -->
+								<div class="header__navigation menu-style-three d-none d-xl-block">
+									<nav class="navigation-menu">
+										<ul class="d-flex align-items-center">
+											<li class="has-children has-children--multilevel-submenu"> <a href="../services.html"><span>Services</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu min-width-304">
+                                                    <li><a href="../remote-support-dba-services.html"><span>SQL Server DBA Remote Support</span></a></li>
+                                                    <li><a href="../sql-server-dba-managed-services.html"><span>SQL Server Managed Services</span></a></li>
+                                                    <li><a href="../cloud-database-management-services.html"><span>SQL on Cloud</span></a></li>
+                                                    <li><a href="../sql-server-consulting-services.html"><span>Database Consulting</span></a></li>
+                                                    <li><a href="../data-engineering-services.html"><span>Data Engineering</span></a></li>
+                                                    <li><a href="../database-migration-services.html"><span>Database Migration</span></a></li>
+                                                    <li><a href="../sql-performance-tuning-and-analysis.html"><span>Database Performance Tuning</span></a></li>
+                                                    <li><a href="../analytics-and-bi-services.html"><span>Analytics &amp; BI</span></a></li>
+                                                    <li><a href="../data-integration-services.html"><span>Data Integration</span></a></li>
+                                                    <li><a href="../application-development-services.html"><span>Enterprise Application Development</span></a></li>
+                                                    <li><a href="../speedcloud-servers.html"><span>SpeedCloud™</span></a></li>
+                                                    <li><a href="../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+                                                </ul>
+											</li>
+											<li class="has-children has-children--multilevel-submenu"><a><span>About</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu">
+													<li><a href="../our-story.html"><span>The startup story</span></a></li>
+													<li><a href="../about-our-team.html"><span>Our Team</span></a></li>
+													<li><a href="../clients.html"><span>Clients</span></a></li>
+													
+													<li><a href="../recognition.html"><span>Recognition</span></a></li>
+													<li><a href="../careers/index.htm" class="hover-style-link"><span>Careers</span></a></li>
+												</ul>
+											</li>
+											<li><a href="../case-studies/index.htm"><span>Case Studies</span></a></li>
+											<li class="has-children has-children--multilevel-submenu"><a><span>Resources</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu">
+													<li><a href="index.htm"><span>Blog</span></a></li>
+													<li><a href="../sql-server/index.htm"><span>SQL Features Explorer</span></a></li>
+												</ul>
+											</li>
+											<!--<li><a href=""><span>Blog</span></a></li>-->
+											<li><a href="/contact"><span>Contact Us</span></a></li>
+											<li><a href="../get-free-db-audit.html" class="ht-btn ht-btn-sm text-white">Get Free DB Audit</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!-- mobile menu -->
+								<div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger"><i></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header Bottom Wrap End -->
+	</div>
+	<!--====================  End of header area  ====================-->
+	    <div class="site-wrapper-reveal">
+        <!--====================  Blog Area Start ====================-->
+        <div class="blog-pages-wrapper py-3">
+            <div class="container">
+                
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.htm">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.htm">Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">When to perform a SQL server health check?</li>
+                  </ol>
+                </nav>
+                
+                <section class="single-blog-item mb-5">
+                    <section class="post-info">
+                    
+                        
+                        <h1 class="post-title text-center">
+                            
+                             When to perform a SQL server health check?                            
+                        </h1>
+                        
+                    <div class="post-meta mt-20 justify-content-center">
+                        <div class="post-author">
+                                Saranya                        </div>
+                        <div class="post-date">
+                            <span class="far fa-calendar meta-icon"></span>
+                            Apr, 2021                        </div>
+                    </div>
+                </section>
+                </section>
+                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Post Feature Start -->
+                       
+                        <!-- Post Feature End -->
+                    </div>
+                    <div class="col-lg-8 ml-auto mr-auto">
+                        <div class="main-blog-wrap">
+                            <!--======= Single Blog Item Start ========-->
+                            <div class="single-blog-item  wow move-up">
+
+                                <!-- Post info Start -->
+                                <div class="post-info lg-blog-post-info">
+                                    
+                                    <div class="post-excerpt mt-15">
+                                        <p style="text-align: center;"><img alt="" src="../howdymanage/uploads/image/performance-health-check-img.jpeg" style="width: 500px; height: 334px;"></p>
+
+<p>A healthy database is essential for staff productivity, customer satisfaction and keeping your company&rsquo;s efficiency high. &nbsp;</p>
+
+<p>If you haven&#39;t kept up with database maintenance and tuning, you&#39;re probably experiencing a slew of performance issues.</p>
+
+<p>When your database slows down, your company suffers as well. Many businesses are unsure what a health check is, when they can get one, and how to proceed afterward, despite how straightforward it sounds.</p>
+
+<p>A health check is a database inspection to see how safe and functional the system is, as the name implies. A database administrator (DBA) will assess overall configuration, query accuracy, data protection, index quality, data maintenance procedures, and security to gain a full understanding of the issues.</p>
+
+<p>Making time for routine health checks can save a lot of time, but we still see clients who neglect to do so, resulting in a variety of problems.&nbsp;</p>
+
+<p>If you&#39;re having some of the issues mentioned below, it&#39;s time to seek professional help.</p>
+
+<ol dir="ltr">
+	<li>
+	<p><b id="docs-internal-guid-68cfc6f4-7fff-019f-42d2-b62a9d34a6b4">You&#39;re experiencing poor performance: </b>This is a clear sign that your database is in need of some TLC. It&#39;s time to schedule a health check when you see problems like sluggish query returns, slow applications, and crashes<b>.</b></p>
+	</li>
+	<li>
+	<p><b id="docs-internal-guid-68cfc6f4-7fff-019f-42d2-b62a9d34a6b4">You&#39;re discussing additional hardware: </b>Although additional hardware is sometimes needed, it is not always the best option. Many businesses rely on additional processors, faster storage, or a new server, but they just needed a health check to identify places where they could improve and innovate.</p>
+	</li>
+	<li>
+	<p><b id="docs-internal-guid-68cfc6f4-7fff-019f-42d2-b62a9d34a6b4">Your database has been neglected: </b>You&#39;d love to be able to upgrade your system or instal a service pack whenever the opportunity presents itself. Some people find it difficult to test restoring from backups on a regular basis because they don&#39;t have the staff or skills in-house to properly maintain and care for a database environment<b>.</b>We don&#39;t all realise what we&#39;re overlooking, but a health check will help you spot places that have been overlooked and need attention. It can also be as easy as a company that is stuck in its ways, still doing things the same way, and didn&#39;t realise there was a better way</p>
+	</li>
+	<li>
+	<p><b>You&#39;ve had an outage:</b> Even if you know what caused the outage &mdash; whether it was&nbsp;corrupt files, device disruption, or a hardware failure &mdash; there might be something else lurking in the shadows. Health tests will not only assist you in addressing the current issue, but they will also help you identify any other possible risks.</p>
+	</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p dir="ltr">Every healthy database should follow some useful practices and basic sanity checks are very essential for an astounding outcome of SQL. Below are few important mentions of the best practices and basic sanity check,</p>
+
+<p dir="ltr"><b id="docs-internal-guid-1da9798a-7fff-1c33-b951-aa0108d62092">Best practices for SQL server:</b></p>
+
+<ul>
+	<li>
+	<p>Conduct general health checks every 6 to 12 months</p>
+	</li>
+	<li>
+	<p>Create documentation and associate it with production and test SQL Servers to supplement operations and routine maintenance</p>
+	</li>
+	<li>
+	<p>Identify all the health issues during the health check and then develop a remediation plan. Don&rsquo;t try to fix the issues during the health check because doing so muddles the results and slows down the health check process. And the fix for one issue might affect another.</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong>Basic sanity check requirements:</strong></p>
+
+<ul>
+	<li>
+	<p>Retain all health check documentation and information for future use</p>
+	</li>
+	<li>
+	<p>Allocate enough space on mission-critical databases and transaction logs to accommodate their growth</p>
+	</li>
+	<li>
+	<p>Manage antivirus scanning, excluding specific files within SQL Server</p>
+	</li>
+	<li>
+	<p>Use Windows Authentication</p>
+	</li>
+	<li>
+	<p>No one should log in as the Service Account to do administration</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>On account of all the above mentioned practices and requirements, GeoPITS will help you&nbsp;problem-solve, implement, identify baselines, monitor systems, optimize your health check report, maintain and tune your database in an organized systematic way.</p>
+
+<p>&nbsp;<br>
+<a href="../case-studies/learn-how-tvs-boosted-their-business-critical-reporting-process-by-3x.html">Read how </a>&nbsp;we helped TVS Motors, a leading Indian motorcycle company boost its DB performance, consolidate and optimize their SQL server environments. Among the many optimisations, GeoPits improved the company&rsquo;s average query execution by three times.</p>
+
+<p>&nbsp;</p>
+                                        <div class="entry-post-share-wrap  border-bottom">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-6 col-md-6">
+                                                    
+                                                    <div class="entry-post-tags">
+                                                        <div class="tagcloud-icon">
+                                                            <i class="fa fa-tags"></i>
+                                                        </div>
+                                                        <div class="tagcloud">
+                                                                                                                            <a href="categories/performance-tuning.html" class="tags">Performance Tuning </a>
+                                                                                                                    </div>
+                                                    </div>
+                                                
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div id="entry-post-share" class="entry-post-share">
+                                                        <div class="share-label">
+                                                            Share this post
+                                                        </div>
+                                                        <div class="share-media">
+                                                            <span class="share-icon far fa-share-alt"></span>
+
+                                                            <div class="share-list">
+                                                                <a class="hint--bounce hint--top hint--primary twitter" href="https://twitter.com/intent/tweet?url=https://geopits.com/blog/when-to-perform-a-sql-server-health-check.html" target="_blank" aria-label="Twitter" href="#">
+                                                                    <i class="fab fa-twitter"></i>
+                                                                </a>
+                                                                <a class="hint--bounce hint--top hint--primary facebook" href="https://www.facebook.com/sharer.php?u=https://geopits.com/blog/when-to-perform-a-sql-server-health-check.html" target="_blank" aria-label="Facebook" href="#">
+                                                                    <i class="fab fa-facebook-f"></i>
+                                                                </a>
+                                                                <a class="hint--bounce hint--top hint--primary linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https://geopits.com/blog/when-to-perform-a-sql-server-health-check.html" target="_blank" aria-label="Linkedin" href="#">
+                                                                    <i class="fab fa-linkedin"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                            <div class="entry-author">
+                                            <div class="author-info">
+                                                <div class="author-avatar">
+                                                    <div class="author-social-networks">
+                                                        <div class="inner">
+                                                                                                                                <p></p>
+                                                                                                                                                                                            <p></p>
+                                                                                                                        
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                    <div class="author-description">
+                                                    <h6 class="author-name">Saranya</h6>
+
+                                                    <div class="author-biographical-info">
+                                                                                                            </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="related-posts-wrapper">
+
+                                                <h6 class="text-center text-color-primary mb-20">You may be interested in</h6>
+                                            <div class="row">
+                              				                            				                            <div class="col-lg-6 col-md-6 wow move-up animated" style="visibility: visible;">
+                	<!-- ht-box-icon Start -->
+                		<a href="https://geopits.com/blog/security-in-sql-azure.html" class="ht-large-box-images style-03">
+                			<div class="large-image-box">
+                				                				        <img class="blog-thumbnail" src="https://geopits.com/howdymanage/uploads/image/blogs/security-in-sql-azure/security-sql-azure-1.jpeg" alt="">
+                				         
+                				<div class="content">
+                					<h5 class="heading">Security in SQL Azure</h5>
+                					<div class="text"> This article is a quick walk-through of some of the key security features which are available in SQL Azure.</div>
+                					<div class="box-images-arrow"><span class="button-text">Read More</span><i class="far fa-long-arrow-right"></i> </div>
+                				</div>
+                			</div>
+                		</a>
+                		<!-- ht-box-icon End -->
+                	</div>
+                	                                        				                            				                            <div class="col-lg-6 col-md-6 wow move-up animated" style="visibility: visible;">
+                	<!-- ht-box-icon Start -->
+                		<a href="https://geopits.com/blog/query-optimizer-fixes-1.html" class="ht-large-box-images style-03">
+                			<div class="large-image-box">
+                				                				        <img class="blog-thumbnail" src="../howdymanage/uploads/image/blogs/copying-multiple-tables-from-one-database-to-another-database-using-import-or-export-wizard/01.jpeg" class="img-fluid" alt="Placeholder Image">
+                				     
+                				<div class="content">
+                					<h5 class="heading">Query Optimizer Fixes</h5>
+                					<div class="text"> This article helps to understand when to turn on the query optimiser fixes for better performance starting from SQL Server 2016</div>
+                					<div class="box-images-arrow"><span class="button-text">Read More</span><i class="far fa-long-arrow-right"></i> </div>
+                				</div>
+                			</div>
+                		</a>
+                		<!-- ht-box-icon End -->
+                	</div>
+                	                	    
+                        <div class="col-lg-12 wow move-up animated" style="visibility: visible;">
+                		    <div class="ht-pagination mt-30 pagination justify-content-center">
+                                <div class="pagination-wrapper">
+                                    <ul class="page-pagination">
+                                                                                
+                                                                                
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                	                                        				                                                </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Post info End -->
+                            </div>
+                            <!--===== Single Blog Item End =========-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====================  Blog Area End  ====================-->
+
+
+
+        <!--========== Call to Action Area Start ============-->
+       <div class="cta-image-area_one service-contact-bg section-space--ptb_80">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-8 col-lg-7">
+						<div class="cta-content md-text-center">
+							<h3 class="heading text-white">We run all kinds of Database services that vow your <span class="text-black"> success</span></h3> </div>
+					</div>
+					<div class="col-xl-4 col-lg-5">
+						<div class="cta-button-group--one text-center"> <a href="/contact" class="btn btn--white btn-one"><span class="btn-icon mr-2"><i class="far fa-comment-alt-dots"></i></span>Schedule Free Consultation</a> <a href="/contact" class="btn btn--secondary  btn-two"><span class="btn-icon mr-2"><i class="far fa-info-circle"></i></span>Get Quote</a> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--========== Call to Action Area End ============-->
+
+    <!--====================  footer area ====================-->
+	<div class="footer-area-wrapper bg-gray">
+		<div class="footer-area section-space--ptb_80">
+			<div class="container">
+				<div class="row footer-widget-wrapper">
+					<div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
+						<div class="footer-widget__logo mb-30"> <img src="../assets/images/logo/geopits-logo.svg" height="48" alt=""> </div>
+						<a href="../maps/place/Geo Platinum IT Services - GeoPITS/@13.0251289,77.6590475,15z/data=!4m5!3m4!1s0x00x5c431b47e03582ec!8m2!3d13.0251289!4d77.6590475.html" target="_blank">
+						<ul class="footer-widget__list">
+							<li>Geo Platinum IT Services,</li>
+							<li>No 3, 5th Cross, 1stFloor, P &amp; T Layout,</li>
+							<li>Horamavu, Kalyan Nagar Post,</li>
+							<li>Bengaluru, Karnataka 560043</li>
+						</ul>
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Quick links</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../remote-support-dba-services.html" class="hover-style-link">SQL Server Remote Support</a></li>
+							<li><a href="../sql-server-dba-managed-services.html" class="hover-style-link">SQL Server Managed Services</a></li>
+							<li><a href="../sql-performance-tuning-and-analysis.html" class="hover-style-link">Performance Tuning</a></li>
+							<li><a href="../database-migration-services.html" class="hover-style-link">Database Migration</a></li>
+							<li><a href="../speedcloud-nxtgen-cost-calculator.html" class="hover-style-link">SpeedCloud™ Cost Calculator</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Resources</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../view/ypy9kjpvygmtwtse.html" target="_blank" class="hover-style-link">Company Brochure</a></li>
+							<li><a href="../view/m8tfufz6pdw6gu7m.html" target="_blank" class="hover-style-link">Managed Services Portfolio</a></li>
+							<li><a href="../view/gnubq5zu95hran8g.html" target="_blank" class="hover-style-link">Performance Tuning Portfolio</a></li>
+							<li><a href="../sql-server/index.htm"><span>SQL Features Explorer</span></a></li>
+							<li><a href="../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">More About Us</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../our-story.html" class="hover-style-link">Our Startup Story</a></li>
+							<li><a href="../about-our-team.html" class="hover-style-link">Our Team</a></li>
+							<li><a href="../clients.html" class="hover-style-link">Our Clients</a></li>
+							<li><a href="../careers/index.htm" class="hover-style-link">Careers</a></li>
+							<li><a href="../privacy-policy.html" class="hover-style-link">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Contact</h6>
+						<ul class="footer-widget__list">
+							<li><a href="tel:+919600153444" class="hover-style-link text-color-primary font-weight--bold"><i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp;(+91)96001 53444</a></li>
+							<li><a href="mailto:info@geopits.com" class="hover-style-link text-color-primary"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;info@geopits.com</a></li>
+							<li><a href="mailto:sales@geopits.com" class="hover-style-link text-color-primary"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;sales@geopits.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright-area section-space--pb_30">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 text-center text-md-left"> <span class="copyright-text">&copy; 2022 GeoPITS <a href="#">All Rights Reserved.</a></span> </div>
+					<div class="col-md-6 text-center text-md-right">
+						<ul class="list ht-social-networks solid-rounded-icon">
+							<li class="item">
+								<a href="../geopits_dbas.html" target="_blank" aria-label="Twitter" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-twitter link-icon"></i> </a>
+							</li>
+							<li class="item">
+								<a href="../geopitsOfficial/index.htm" target="_blank" aria-label="Facebook" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-facebook-f link-icon"></i> </a>
+							</li>
+							<li class="item">
+								<a href="https://www.linkedin.com/company/geopits" target="_blank" aria-label="Linkedin" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-linkedin link-icon"></i> </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--====================  End of footer area  ====================-->
+
+	<!--====================  scroll top ====================-->
+	<!--<a href="#" class="scroll-top" id="scroll-top"> <i class="arrow-top fal fa-long-arrow-up"></i> <i class="arrow-bottom fal fa-long-arrow-up"></i> </a>-->
+	<!--====================  End of scroll top  ====================-->
+	    	<!--====================  mobile menu overlay ====================-->
+	<div class="mobile-menu-overlay" id="mobile-menu-overlay">
+		<div class="mobile-menu-overlay__inner">
+			<div class="mobile-menu-overlay__header">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-md-6 col-8">
+							<!-- logo -->
+							<div class="logo">
+								<a href="../index.htm"> <img src="../assets/images/logo/geopits-logo.svg" class="img-fluid" alt=""> </a>
+							</div>
+						</div>
+						<div class="col-md-6 col-4">
+							<!-- mobile menu content -->
+							<div class="mobile-menu-content text-right"> <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-menu-overlay__body">
+				<nav class="offcanvas-navigation">
+					<ul>
+						<li class="has-children"><a href="../services.html">Services</a>
+							<ul class="sub-menu">
+									                <li><a href="../remote-support-dba-services.html"><span>SQL Server DBA Remote Support</span></a></li>
+                                                    <li><a href="../sql-server-dba-managed-services.html"><span>SQL Server Managed Services</span></a></li>
+                                                    <li><a href="../cloud-database-management-services.html"><span>SQL on Cloud</span></a></li>
+                                                    <li><a href="../sql-server-consulting-services.html"><span>Database Consulting</span></a></li>
+                                                    <li><a href="../data-engineering-services.html"><span>Data Engineering</span></a></li>
+                                                    <li><a href="../database-migration-services.html"><span>Database Migration</span></a></li>
+                                                    <li><a href="../sql-performance-tuning-and-analysis.html"><span>Database Performance Tuning</span></a></li>
+                                                    <li><a href="../analytics-and-bi-services.html"><span>Analytics &amp; BI</span></a></li>
+                                                    <li><a href="../data-integration-services.html"><span>Data Integration</span></a></li>
+                                    <li><a href="../application-development-services.html"><span>Enterprise Application Development</span></a></li>
+                                    <li><a href="../speedcloud-nxtgen-cost-calculator.html"><span>SpeedCloud™ Cost Calculator</span></a></li>
+							</ul>
+						</li>
+						<li class="has-children"><a>About</a>
+							<ul class="sub-menu">
+								<li><a href="../our-story.html"><span>The startup story</span></a></li>
+								<li><a href="../about-our-team.html"><span>Our Team</span></a></li>
+								<li><a href="../clients.html"><span>Clients</span></a></li><li><a href="../recognition.html"><span>Recognition</span></a></li>
+								<li><a href="../careers/index.htm" target="_blank" class="hover-style-link"><span>Careers</span></a></li>
+							</ul>
+						</li>
+						<li><a href="../case-studies/index.htm">Case Studies</a></li>
+						<li class="has-children"><a>Resources</a>
+							<ul class="sub-menu">
+								<li><a href="index.htm"><span>Blog</span></a></li>
+								<li><a href="../sql-server/index.htm"><span>SQL Features Explorer</span></a></li>
+								<li><a href="../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+							</ul>
+						</li>
+						<!--<li><a href="/blog/" target="_blank"><span>Blog</span></a></li>-->
+						<li><a href="/contact">Contact Us</a></li>
+						<li><a href="../get-free-db-audit.html">Get Free DB Audit</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!--====================  End of mobile menu overlay  ====================-->    	<!-- JS ============================================ -->
+	<!-- Modernizer JS -->
+	<script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+	<!-- jQuery JS -->
+	<script src="../assets/js/vendor/jquery-3.3.1.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="../assets/js/vendor/bootstrap.min.js"></script>
+	<!-- Swiper Slider JS -->
+	<script src="../assets/js/plugins/swiper.min.js"></script>
+	<!-- Light gallery JS -->
+	<script src="../assets/js/plugins/lightgallery.min.js"></script>
+	<!-- Waypoints JS -->
+	<script src="../assets/js/plugins/waypoints.min.js"></script>
+	<!-- Counter down JS -->
+	<script src="../assets/js/plugins/countdown.min.js"></script>
+	<!-- Isotope JS -->
+	<script src="../assets/js/plugins/isotope.min.js"></script>
+	<!-- Masonry JS -->
+	<script src="../assets/js/plugins/masonry.min.js"></script>
+	<!-- ImagesLoaded JS -->
+	<script src="../assets/js/plugins/images-loaded.min.js"></script>
+	<!-- Wavify JS -->
+	<script src="../assets/js/plugins/wavify.js"></script>
+	<!-- jQuery Wavify JS -->
+	<script src="../assets/js/plugins/jquery.wavify.js"></script>
+	<!-- circle progress JS -->
+	<script src="../assets/js/plugins/circle-progress.min.js"></script>
+	<!-- counterup JS -->
+	<script src="../assets/js/plugins/counterup.min.js"></script>
+	<!-- wow JS -->
+	<script src="../assets/js/plugins/wow.min.js"></script>
+	<!-- animation text JS -->
+	<script src="../assets/js/plugins/animation-text.min.js"></script>
+	<!-- Vivus JS -->
+	<script src="../assets/js/plugins/vivus.min.js"></script>
+	<!-- Some plugins JS -->
+	<script src="../assets/js/plugins/some-plugins.js"></script>
+	<!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
+	<!--
+    <script src="/assets/js/plugins/plugins.min.js"></script>
+    -->
+	<!-- Main JS -->
+	<script src="../assets/js/main.js"></script>
+	
+	<!-- Select2 JS -->
+	<script src="../assets/js/select2.min.js"></script>
+	<script type="text/javascript">
+_linkedin_partner_id = "3609132";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="../d/px/index.htm.gif?pid=3609132&fmt=gif">
+</noscript></div></body>
+
+</html>
+
+
+<!-- Page generated by CouchCMS - Simple Open-Source Content Management -->

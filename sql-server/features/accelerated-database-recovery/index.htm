@@ -1,0 +1,763 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/68afaa6f3ed5774efd9a5e9ee/54422770e3ff0682f98d7f78c.js");</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Accelerated database recovery Feature in SQL Server | GeoPITS</title>
+	<meta name="description" content="Learn more about the Accelerated database recovery support in different editions of SQL Server from MS SQL 2012 -  MS SQL Server 2019">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="<cms:if><cms:show seo_title /><cms:else />Blogs | GeoPITS</cms:if>">
+    <meta property="og:description" content="<cms:if seo_description ><cms:show seo_description /><cms:else />Case Studies throws light on the work GeoPITS has done in different areas like performance optimization, managed services, cloud cost optimization etc</cms:if>">
+    <meta property="og:image" content="/assets/images/home/home-banner.webp">
+	
+	  	<link rel="shortcut icon" href="../../../assets/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="../../../assets/images/favicon.png">
+	<!-- CSS
+        ============================================ -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../../../assets/css/vendor/bootstrap.min.css">
+	<!-- Font Family CSS -->
+	<link rel="stylesheet" href="../../../assets/css/vendor/cerebrisans.css">
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="../../../assets/css/vendor/fontawesome-all.min.css">
+	<!-- Swiper slider CSS -->
+	<link rel="stylesheet" href="../../../assets/css/plugins/swiper.min.css">
+	<!-- animate-text CSS -->
+	<link rel="stylesheet" href="../../../assets/css/plugins/animate-text.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="../../../assets/css/plugins/animate.min.css">
+	<!-- Select2 CSS -->
+	<link rel="stylesheet" href="../../../assets/css/select2.min.css">
+	<!-- Light gallery CSS -->
+	<link rel="stylesheet" href="../../../assets/css/plugins/lightgallery.min.css">
+	<!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
+	<!--
+        <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+        <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+        -->
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="../../../assets/css/style.css"> 
+
+	<!-- Start of Async Drift Code -->
+<!-- End of Async Drift Code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="../../../gtag/js.js?id=UA-100125040-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-100125040-1');
+</script>
+	
+<style>
+    
+    .p-relative {
+        position: relative;
+    }
+    .btn-left-block, .btn-right-block {
+        position: absolute;
+        height: 38%;
+        z-index: 100;
+        display: flex;
+        width: 10%;
+    }
+    .btn-right, .btn-left {
+        background: none;
+        border: none;
+        width: 100%;
+    }
+    .btn-left-block{
+        left: -50px;
+    }
+    .btn-right-block {
+        right: -50px;
+    }
+    .hero-card h5{
+        font-size: 18px;
+        margin: 3% 0;
+        color: #000;
+    }
+    .hero-card{
+        background-color: #fff;
+        border: none;
+    }
+    .card-row {
+        flex-wrap: nowrap;
+        overflow: hidden;
+        min-height: 250px;
+    } 
+    .logo-block img{
+        width: 50px;
+        height: 50px;
+        margin: auto auto 2%;
+        display: block;
+    }
+    .tag{
+        text-align: left;
+    }
+    .label {
+        display: inline-block;
+        padding: 1%;
+        color: #000;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25em;
+        background-color: #fff;
+        margin: 1% 1% 1% 0;
+    }
+    .label-1{
+        background-color: #EFFD5F;
+    }
+    .label-2{
+        background-color: #4FB948;
+        color: #fff;
+    }
+    .label-3{
+        background-color: #E2BBBB;
+        color: #DF0000;
+        padding: 1px 3px;
+        font-size: 10px;
+        margin-left: 7px;
+    }
+    .infotechno-hero-text img{
+        width: 100px;
+        margin-bottom: 2%;
+        object-fit: contain;
+    }
+    .infotechno-hero-text p a{
+        color: #337ab7;
+        font-weight: bold;
+        margin-bottom: 3%;
+    }
+    
+    .more_information a{
+        display: inline-block;
+        text-decoration: underline;
+    }
+    .more_information ul {
+        list-style-type: disc;
+        margin-left: 2%;
+    }
+    .search_icon img{
+        position: absolute;
+        top: 11px;
+        right: 10px;
+        width: 15px;
+    }
+    .input-group:hover .search_icon{
+        display: none;
+    }
+    .hero-card img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        display: inline;
+        margin: 2% 5% 4%;
+    }
+    .post-excerpt{
+        padding-top: 4%;
+        border-top: 0.25px solid #585858;
+    }
+    .individualsql-bg{
+        background: #0895D5;
+    }
+    .infotechno-hero-text h1, .infotechno-hero-text p, .infotechno-subhero-text, .infotechno-subhero-text h6, .infotechno-hero-text a{
+        color: #fff!important;
+    }
+    .infotechno-hero-text a{
+        text-decoration: underline;
+        opacity: 0.7;
+    }
+    .infotechno-hero-text a:hover{
+        opacity: 1;
+    }
+    /*.ht-btn{*/
+    /*    background: #0895D5;*/
+    /*}*/
+    .our-experience-wrapper{
+        padding: 4% 0;
+    }
+    .our-experience-wrapper .table{
+        margin-top: 3%;
+    }
+    .our-experience-wrapper th, .our-experience-wrapper tr{
+        text-align: center;
+    }
+    .fa-check-circle {
+        color: #4FB948;
+    }
+    .fa-times-circle {
+        color: #F44336;
+        opacity: 0.7;
+    }
+    .more_information{
+        background: #EDEDED;
+        padding: 3%;
+    }
+    .table-responsive th a{
+        text-decoration: underline;
+    }
+    @media only screen and (min-width: 767px){
+        .hero-card {
+            width: 70%;
+            padding: 2%; 
+            margin: auto;
+        }
+        
+    }
+    @media only screen and (max-width: 767px){
+        .hero-card {
+            margin: 7% auto;
+            padding: 2%;
+        }
+        .infotechno-hero-text{
+            text-align: left;
+        }
+        .more_information{
+            padding: 12% 2% 2%;
+        }
+        .more_information ul{
+            margin-left: 8%;
+        }
+    }
+</style>
+</head>
+
+<body>
+	
+<!--====================  header area ====================-->
+	<div class="header-area header-area--default">
+		<!-- Header Top Wrap Start -->
+	        	<div class="header-top-wrap bg-theme-default border-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="text-center top-message text-white">
+						    <a href="../../../sql-compare.html" target="_blank" rel="nofollow noopener"> Get a free demo of our new SQL Compare Tool ➔  </a>
+						 </p>
+					</div>
+				</div>
+			</div>
+		</div>		<!-- Header Top Wrap End -->
+		<!-- Header Bottom Wrap Start -->
+		<div class="header-bottom-wrap  bg-white header-sticky">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="header position-relative">
+							<!-- brand logo -->
+							<div class="header__logo">
+								<a href="../../../index.htm"> <img src="../../../assets/images/logo/geopits-logo.svg" class="img-fluid" alt="GeoPITS Logo"> </a>
+							</div>
+							<div class="header-right">
+								<!-- navigation menu -->
+								<div class="header__navigation menu-style-three d-none d-xl-block">
+									<nav class="navigation-menu">
+										<ul class="d-flex align-items-center">
+											<li class="has-children has-children--multilevel-submenu"> <a href="../../../services.html"><span>Services</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu min-width-304">
+                                                    <li><a href="../../../remote-support-dba-services.html"><span>SQL Server DBA Remote Support</span></a></li>
+                                                    <li><a href="../../../sql-server-dba-managed-services.html"><span>SQL Server Managed Services</span></a></li>
+                                                    <li><a href="../../../cloud-database-management-services.html"><span>SQL on Cloud</span></a></li>
+                                                    <li><a href="../../../sql-server-consulting-services.html"><span>Database Consulting</span></a></li>
+                                                    <li><a href="../../../data-engineering-services.html"><span>Data Engineering</span></a></li>
+                                                    <li><a href="../../../database-migration-services.html"><span>Database Migration</span></a></li>
+                                                    <li><a href="../../../sql-performance-tuning-and-analysis.html"><span>Database Performance Tuning</span></a></li>
+                                                    <li><a href="../../../analytics-and-bi-services.html"><span>Analytics &amp; BI</span></a></li>
+                                                    <li><a href="../../../data-integration-services.html"><span>Data Integration</span></a></li>
+                                                    <li><a href="../../../application-development-services.html"><span>Enterprise Application Development</span></a></li>
+                                                    <li><a href="../../../speedcloud-servers.html"><span>SpeedCloud™</span></a></li>
+                                                    <li><a href="../../../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+                                                </ul>
+											</li>
+											<li class="has-children has-children--multilevel-submenu"><a><span>About</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu">
+													<li><a href="../../../our-story.html"><span>The startup story</span></a></li>
+													<li><a href="../../../about-our-team.html"><span>Our Team</span></a></li>
+													<li><a href="../../../clients.html"><span>Clients</span></a></li>
+													
+													<li><a href="../../../recognition.html"><span>Recognition</span></a></li>
+													<li><a href="../../../careers/index.htm" class="hover-style-link"><span>Careers</span></a></li>
+												</ul>
+											</li>
+											<li><a href="../../../case-studies/index.htm"><span>Case Studies</span></a></li>
+											<li class="has-children has-children--multilevel-submenu"><a><span>Resources</span></a>
+												<!-- multilevel submenu -->
+												<ul class="submenu">
+													<li><a href="../../../blog/index.htm"><span>Blog</span></a></li>
+													<li><a href="../../index.htm"><span>SQL Features Explorer</span></a></li>
+												</ul>
+											</li>
+											<!--<li><a href=""><span>Blog</span></a></li>-->
+											<li><a href="/contact"><span>Contact Us</span></a></li>
+											<li><a href="../../../get-free-db-audit.html" class="ht-btn ht-btn-sm text-white">Get Free DB Audit</a></li>
+										</ul>
+									</nav>
+								</div>
+								<!-- mobile menu -->
+								<div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger"><i></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header Bottom Wrap End -->
+	</div>
+	<!--====================  End of header area  ====================-->
+		<div class="site-wrapper-reveal">
+	    
+	    <div class="infotechno-hero individualsql-bg" style="padding: 2% 0;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!--baseline-->
+                    <div class="col-md-6">
+                        <div class="infotechno-hero-text wow move-up animated">
+                            <a href="/sql-server/versions/2019">‹ Back to all features</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	    
+	    <!--versions table-->
+	    <div class="our-experience-wrapper">
+            <div class="container">
+                <div class="section-title small-mb__40 tablet-mb__40">
+                    <h6 class="section-sub-title mb-20">Features</h6> 
+                    <h1 class="heading" style="font-size: 40px;">Accelerated database recovery <span class="text-color-primary"> in SQL Server</span></h1>
+                    <p class="text mt-20">Accelerated database recovery (ADR) improves database availability, especially in the presence of long running transactions, by redesigning the SQL database engine recovery process.. GeoPITS brings you the comprehensive details of Accelerated database recovery's support in different versions & editions of SQL Server.
+</p>
+                                        <h2 style="font-size: 24px">Explore Accelerated database recovery In Different SQL server Versions & Editions</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered" id="features">
+                      <thead>
+                        <tr>
+                          <th scope="col">Version</th><th scope="col">Enterprise</th><th scope="col">Standard</th><th scope="col">Web</th><th scope="col">Express (Adv.)</th><th scope="col">Express</th>                        </tr>
+                      </thead>
+                      <tbody>
+                                                  <tr>
+                          <th scope="row"><a href="../../versions/2019/index.htm">Version v2019</a></th>
+                                                      
+                            <td><i class="fas fa-check-circle" aria-hidden="true"></i>                            <span>Yes</span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-check-circle" aria-hidden="true"></i>                            <span>Yes</span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-check-circle" aria-hidden="true"></i>                            <span>Yes</span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                    </tr>
+                                                <tr>
+                          <th scope="row"><a href="../../versions/2017/index.htm">Version v2017</a></th>
+                                                      
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                    </tr>
+                                                <tr>
+                          <th scope="row"><a href="../../versions/2016/index.htm">Version v2016</a></th>
+                                                      
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                    </tr>
+                                                <tr>
+                          <th scope="row"><a href="../../versions/2014/index.htm">Version v2014</a></th>
+                                                      
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                    </tr>
+                                                <tr>
+                          <th scope="row"><a href="../../versions/2012/index.htm">Version v2012</a></th>
+                                                      
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                        
+                            <td><i class="fas fa-times-circle" aria-hidden="true"></i>                            <span></span>
+                            </td>
+                            
+                                                    </tr>
+                                              </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--more information-->
+        
+        <!--faq-->
+        
+        <div class="accordion-wrapper" style="padding-bottom: 7%">
+            <div class="container">
+                <div class="faq-wrapper">
+                    <div class="section-elements-title mb-30">
+                        <h3 style="font-size: 34px;">Frequently Asked Questions</h3>
+                    </div>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        What is Accelerated database recovery? <span> <i class="fas fa-chevron-down"></i>
+                                    <i class="fas fa-chevron-up"></i> </span>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                                <div class="card-body">
+                                    <p>Accelerated database recovery (ADR) improves database availability, especially in the presence of long running transactions, by redesigning the SQL database engine recovery process.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Which Versions of SQL Server have this feature Accelerated database recovery?<span> <i class="fas fa-chevron-down"></i>
+                                    <i class="fas fa-chevron-up"></i> </span>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="">
+                                <div class="card-body">
+                                    <p>You can find more details about this version <a href="#features" style="text-decoration: underline">here</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+		<!--========== Call to Action Area Start ============-->
+		<div class="cta-image-area_one service-contact-bg section-space--ptb_80">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-xl-8 col-lg-7">
+						<div class="cta-content md-text-center">
+							<h3 class="heading text-white">We run all kinds of Database services that vow your <span class="text-black"> success</span></h3> </div>
+					</div>
+					<div class="col-xl-4 col-lg-5">
+						<div class="cta-button-group--one text-center"> <a href="/contact" class="btn btn--white btn-one"><span class="btn-icon mr-2"><i class="far fa-comment-alt-dots"></i></span>Schedule Free Consultation</a> <a href="/contact" class="btn btn--secondary  btn-two"><span class="btn-icon mr-2"><i class="far fa-info-circle"></i></span>Get Quote</a> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--========== Call to Action Area End ============-->
+	</div>
+
+    <!--====================  footer area ====================-->
+	<div class="footer-area-wrapper bg-gray">
+		<div class="footer-area section-space--ptb_80">
+			<div class="container">
+				<div class="row footer-widget-wrapper">
+					<div class="col-sm-6 col-md-3 col-lg-3 footer-widget">
+						<div class="footer-widget__logo mb-30"> <img src="../../../assets/images/logo/geopits-logo.svg" height="48" alt=""> </div>
+						<a href="../../../maps/place/Geo Platinum IT Services - GeoPITS/@13.0251289,77.6590475,15z/data=!4m5!3m4!1s0x00x5c431b47e03582ec!8m2!3d13.0251289!4d77.6590475.html" target="_blank">
+						<ul class="footer-widget__list">
+							<li>Geo Platinum IT Services,</li>
+							<li>No 3, 5th Cross, 1stFloor, P &amp; T Layout,</li>
+							<li>Horamavu, Kalyan Nagar Post,</li>
+							<li>Bengaluru, Karnataka 560043</li>
+						</ul>
+						</a>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Quick links</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../../../remote-support-dba-services.html" class="hover-style-link">SQL Server Remote Support</a></li>
+							<li><a href="../../../sql-server-dba-managed-services.html" class="hover-style-link">SQL Server Managed Services</a></li>
+							<li><a href="../../../sql-performance-tuning-and-analysis.html" class="hover-style-link">Performance Tuning</a></li>
+							<li><a href="../../../database-migration-services.html" class="hover-style-link">Database Migration</a></li>
+							<li><a href="../../../speedcloud-nxtgen-cost-calculator.html" class="hover-style-link">SpeedCloud™ Cost Calculator</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Resources</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../../../view/ypy9kjpvygmtwtse.html" target="_blank" class="hover-style-link">Company Brochure</a></li>
+							<li><a href="../../../view/m8tfufz6pdw6gu7m.html" target="_blank" class="hover-style-link">Managed Services Portfolio</a></li>
+							<li><a href="../../../view/gnubq5zu95hran8g.html" target="_blank" class="hover-style-link">Performance Tuning Portfolio</a></li>
+							<li><a href="../../index.htm"><span>SQL Features Explorer</span></a></li>
+							<li><a href="../../../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">More About Us</h6>
+						<ul class="footer-widget__list">
+							<li><a href="../../../our-story.html" class="hover-style-link">Our Startup Story</a></li>
+							<li><a href="../../../about-our-team.html" class="hover-style-link">Our Team</a></li>
+							<li><a href="../../../clients.html" class="hover-style-link">Our Clients</a></li>
+							<li><a href="../../../careers/index.htm" class="hover-style-link">Careers</a></li>
+							<li><a href="../../../privacy-policy.html" class="hover-style-link">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 col-lg-2 footer-widget">
+						<h6 class="footer-widget__title mb-20">Contact</h6>
+						<ul class="footer-widget__list">
+							<li><a href="tel:+919600153444" class="hover-style-link text-color-primary font-weight--bold"><i class="fa fa-mobile"></i>&nbsp;&nbsp;&nbsp;(+91)96001 53444</a></li>
+							<li><a href="mailto:info@geopits.com" class="hover-style-link text-color-primary"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;info@geopits.com</a></li>
+							<li><a href="mailto:sales@geopits.com" class="hover-style-link text-color-primary"><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;sales@geopits.com</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright-area section-space--pb_30">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 text-center text-md-left"> <span class="copyright-text">&copy; 2022 GeoPITS <a href="#">All Rights Reserved.</a></span> </div>
+					<div class="col-md-6 text-center text-md-right">
+						<ul class="list ht-social-networks solid-rounded-icon">
+							<li class="item">
+								<a href="../../../geopits_dbas.html" target="_blank" aria-label="Twitter" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-twitter link-icon"></i> </a>
+							</li>
+							<li class="item">
+								<a href="../../../geopitsOfficial/index.htm" target="_blank" aria-label="Facebook" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-facebook-f link-icon"></i> </a>
+							</li>
+							<li class="item">
+								<a href="https://www.linkedin.com/company/geopits" target="_blank" aria-label="Linkedin" class="social-link hint--bounce hint--top hint--primary"> <i class="fab fa-linkedin link-icon"></i> </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--====================  End of footer area  ====================-->
+
+	<!--====================  scroll top ====================-->
+	<!--<a href="#" class="scroll-top" id="scroll-top"> <i class="arrow-top fal fa-long-arrow-up"></i> <i class="arrow-bottom fal fa-long-arrow-up"></i> </a>-->
+	<!--====================  End of scroll top  ====================-->
+	    	<!--====================  mobile menu overlay ====================-->
+	<div class="mobile-menu-overlay" id="mobile-menu-overlay">
+		<div class="mobile-menu-overlay__inner">
+			<div class="mobile-menu-overlay__header">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-md-6 col-8">
+							<!-- logo -->
+							<div class="logo">
+								<a href="../../../index.htm"> <img src="../../../assets/images/logo/geopits-logo.svg" class="img-fluid" alt=""> </a>
+							</div>
+						</div>
+						<div class="col-md-6 col-4">
+							<!-- mobile menu content -->
+							<div class="mobile-menu-content text-right"> <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-menu-overlay__body">
+				<nav class="offcanvas-navigation">
+					<ul>
+						<li class="has-children"><a href="../../../services.html">Services</a>
+							<ul class="sub-menu">
+									                <li><a href="../../../remote-support-dba-services.html"><span>SQL Server DBA Remote Support</span></a></li>
+                                                    <li><a href="../../../sql-server-dba-managed-services.html"><span>SQL Server Managed Services</span></a></li>
+                                                    <li><a href="../../../cloud-database-management-services.html"><span>SQL on Cloud</span></a></li>
+                                                    <li><a href="../../../sql-server-consulting-services.html"><span>Database Consulting</span></a></li>
+                                                    <li><a href="../../../data-engineering-services.html"><span>Data Engineering</span></a></li>
+                                                    <li><a href="../../../database-migration-services.html"><span>Database Migration</span></a></li>
+                                                    <li><a href="../../../sql-performance-tuning-and-analysis.html"><span>Database Performance Tuning</span></a></li>
+                                                    <li><a href="../../../analytics-and-bi-services.html"><span>Analytics &amp; BI</span></a></li>
+                                                    <li><a href="../../../data-integration-services.html"><span>Data Integration</span></a></li>
+                                    <li><a href="../../../application-development-services.html"><span>Enterprise Application Development</span></a></li>
+                                    <li><a href="../../../speedcloud-nxtgen-cost-calculator.html"><span>SpeedCloud™ Cost Calculator</span></a></li>
+							</ul>
+						</li>
+						<li class="has-children"><a>About</a>
+							<ul class="sub-menu">
+								<li><a href="../../../our-story.html"><span>The startup story</span></a></li>
+								<li><a href="../../../about-our-team.html"><span>Our Team</span></a></li>
+								<li><a href="../../../clients.html"><span>Clients</span></a></li><li><a href="../../../recognition.html"><span>Recognition</span></a></li>
+								<li><a href="../../../careers/index.htm" target="_blank" class="hover-style-link"><span>Careers</span></a></li>
+							</ul>
+						</li>
+						<li><a href="../../../case-studies/index.htm">Case Studies</a></li>
+						<li class="has-children"><a>Resources</a>
+							<ul class="sub-menu">
+								<li><a href="../../../blog/index.htm"><span>Blog</span></a></li>
+								<li><a href="../../index.htm"><span>SQL Features Explorer</span></a></li>
+								<li><a href="../../../sql-compare.html"><span>SQL Compare Tool</span></a></li>
+							</ul>
+						</li>
+						<!--<li><a href="/blog/" target="_blank"><span>Blog</span></a></li>-->
+						<li><a href="/contact">Contact Us</a></li>
+						<li><a href="../../../get-free-db-audit.html">Get Free DB Audit</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!--====================  End of mobile menu overlay  ====================-->    	<!-- JS ============================================ -->
+	<!-- Modernizer JS -->
+	<script src="../../../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+	<!-- jQuery JS -->
+	<script src="../../../assets/js/vendor/jquery-3.3.1.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="../../../assets/js/vendor/bootstrap.min.js"></script>
+	<!-- Swiper Slider JS -->
+	<script src="../../../assets/js/plugins/swiper.min.js"></script>
+	<!-- Light gallery JS -->
+	<script src="../../../assets/js/plugins/lightgallery.min.js"></script>
+	<!-- Waypoints JS -->
+	<script src="../../../assets/js/plugins/waypoints.min.js"></script>
+	<!-- Counter down JS -->
+	<script src="../../../assets/js/plugins/countdown.min.js"></script>
+	<!-- Isotope JS -->
+	<script src="../../../assets/js/plugins/isotope.min.js"></script>
+	<!-- Masonry JS -->
+	<script src="../../../assets/js/plugins/masonry.min.js"></script>
+	<!-- ImagesLoaded JS -->
+	<script src="../../../assets/js/plugins/images-loaded.min.js"></script>
+	<!-- Wavify JS -->
+	<script src="../../../assets/js/plugins/wavify.js"></script>
+	<!-- jQuery Wavify JS -->
+	<script src="../../../assets/js/plugins/jquery.wavify.js"></script>
+	<!-- circle progress JS -->
+	<script src="../../../assets/js/plugins/circle-progress.min.js"></script>
+	<!-- counterup JS -->
+	<script src="../../../assets/js/plugins/counterup.min.js"></script>
+	<!-- wow JS -->
+	<script src="../../../assets/js/plugins/wow.min.js"></script>
+	<!-- animation text JS -->
+	<script src="../../../assets/js/plugins/animation-text.min.js"></script>
+	<!-- Vivus JS -->
+	<script src="../../../assets/js/plugins/vivus.min.js"></script>
+	<!-- Some plugins JS -->
+	<script src="../../../assets/js/plugins/some-plugins.js"></script>
+	<!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
+	<!--
+    <script src="/assets/js/plugins/plugins.min.js"></script>
+    -->
+	<!-- Main JS -->
+	<script src="../../../assets/js/main.js"></script>
+	
+	<!-- Select2 JS -->
+	<script src="../../../assets/js/select2.min.js"></script>
+	<script type="text/javascript">
+_linkedin_partner_id = "3609132";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="../../../d/px/index.htm.gif?pid=3609132&fmt=gif">
+</noscript>    <script>
+      var container = document.getElementById('logo-cards');
+      var right = document.getElementById('slideRight')
+      right.onclick = function() {
+        slideScroll(container, 'right', 25, 150, 10);
+      }
+      var left = document.getElementById('slideLeft');
+      left.onclick = function(){
+        slideScroll(container, 'left', 25,150, 10)
+      }
+      function slideScroll(element, direction,  speed, distance, step){
+        scrollAmount = 0;
+        var slideTimer = setInterval(function() {
+          if(direction == 'left'){
+            element.scrollLeft -= step;
+          } else {
+            element.scrollLeft += step;
+          }
+          scrollAmount +=step;
+          if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+          }
+        },speed)
+      }
+      </script>
+</body>
+
+</html>

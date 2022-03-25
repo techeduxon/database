@@ -1,0 +1,1152 @@
+Uri: https://geopits.com/
+File Name: C:\Downloaded Web Sites\geopits.com\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/assets/images/favicon.png
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\favicon.png
+Content Type: image/png
+
+Uri: https://geopits.com/assets/css/vendor/bootstrap.min.css
+File Name: C:\Downloaded Web Sites\geopits.com\assets\css\vendor\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://geopits.com/assets/css/vendor/cerebrisans.css
+File Name: C:\Downloaded Web Sites\geopits.com\assets\css\vendor\cerebrisans.css
+Content Type: text/css
+
+Uri: https://geopits.com/assets/css/vendor/fontawesome-all.min.css
+File Name: C:\Downloaded Web Sites\geopits.com\assets\css\vendor\fontawesome-all.min.css
+Content Type: text/css
+
+Uri: https://geopits.com/assets/css/plugins/swiper.min.css
+File Name: C:\Downloaded Web Sites\geopits.com\assets\css\plugins\swiper.min.css
+Content Type: text/css
+
+Uri: https://geopits.com/assets/css/plugins/animate-text.css
+File Name: C:\Downloaded Web Sites\geopits.com\assets\css\plugins\animate-text.css
+Content Type: text/css
+
+Uri: https://geopits.com/assets/css/plugins/animate.min.css
+File Name: C:\Downloaded Web Sites\geopits.com\assets\css\plugins\animate.min.css
+Content Type: text/css
+
+Uri: https://geopits.com/assets/css/select2.min.css
+File Name: C:\Downloaded Web Sites\geopits.com\assets\css\select2.min.css
+Content Type: text/css
+
+Uri: https://geopits.com/assets/css/plugins/lightgallery.min.css
+File Name: C:\Downloaded Web Sites\geopits.com\assets\css\plugins\lightgallery.min.css
+Content Type: text/css
+
+Uri: https://geopits.com/assets/css/style.css
+File Name: C:\Downloaded Web Sites\geopits.com\assets\css\style.css
+Content Type: text/css
+
+Uri: https://geopits.com/sql-compare
+File Name: C:\Downloaded Web Sites\geopits.com\sql-compare.html
+Content Type: text/html
+
+Uri: https://geopits.com/services
+File Name: C:\Downloaded Web Sites\geopits.com\services.html
+Content Type: text/html
+
+Uri: https://geopits.com/remote-support-dba-services
+File Name: C:\Downloaded Web Sites\geopits.com\remote-support-dba-services.html
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server-dba-managed-services
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server-dba-managed-services.html
+Content Type: text/html
+
+Uri: https://geopits.com/cloud-database-management-services
+File Name: C:\Downloaded Web Sites\geopits.com\cloud-database-management-services.html
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server-consulting-services
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server-consulting-services.html
+Content Type: text/html
+
+Uri: https://geopits.com/data-engineering-services
+File Name: C:\Downloaded Web Sites\geopits.com\data-engineering-services.html
+Content Type: text/html
+
+Uri: https://geopits.com/database-migration-services
+File Name: C:\Downloaded Web Sites\geopits.com\database-migration-services.html
+Content Type: text/html
+
+Uri: https://geopits.com/sql-performance-tuning-and-analysis
+File Name: C:\Downloaded Web Sites\geopits.com\sql-performance-tuning-and-analysis.html
+Content Type: text/html
+
+Uri: https://geopits.com/analytics-and-bi-services
+File Name: C:\Downloaded Web Sites\geopits.com\analytics-and-bi-services.html
+Content Type: text/html
+
+Uri: https://geopits.com/data-integration-services
+File Name: C:\Downloaded Web Sites\geopits.com\data-integration-services.html
+Content Type: text/html
+
+Uri: https://geopits.com/application-development-services
+File Name: C:\Downloaded Web Sites\geopits.com\application-development-services.html
+Content Type: text/html
+
+Uri: https://geopits.com/speedcloud-servers
+File Name: C:\Downloaded Web Sites\geopits.com\speedcloud-servers.html
+Content Type: text/html
+
+Uri: https://geopits.com/our-story
+File Name: C:\Downloaded Web Sites\geopits.com\our-story.html
+Content Type: text/html
+
+Uri: https://geopits.com/about-our-team
+File Name: C:\Downloaded Web Sites\geopits.com\about-our-team.html
+Content Type: text/html
+
+Uri: https://geopits.com/clients
+File Name: C:\Downloaded Web Sites\geopits.com\clients.html
+Content Type: text/html
+
+Uri: https://geopits.com/recognition
+File Name: C:\Downloaded Web Sites\geopits.com\recognition.html
+Content Type: text/html
+
+Uri: https://geopits.com/careers/
+File Name: C:\Downloaded Web Sites\geopits.com\careers\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/case-studies/
+File Name: C:\Downloaded Web Sites\geopits.com\case-studies\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/blog/
+File Name: C:\Downloaded Web Sites\geopits.com\blog\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/get-free-db-audit
+File Name: C:\Downloaded Web Sites\geopits.com\get-free-db-audit.html
+Content Type: text/html
+
+Uri: https://geopits.com/case-studies/saas-collaboration-software-builds-a-stable-and-scalable-sql-environment-with-our-managed-services.html
+File Name: C:\Downloaded Web Sites\geopits.com\case-studies\saas-collaboration-software-builds-a-stable-and-scalable-sql-environment-with-our-managed-services.html
+Content Type: text/html
+
+Uri: https://geopits.com/case-studies/learn-how-tvs-boosted-their-business-critical-reporting-process-by-3x.html
+File Name: C:\Downloaded Web Sites\geopits.com\case-studies\learn-how-tvs-boosted-their-business-critical-reporting-process-by-3x.html
+Content Type: text/html
+
+Uri: https://geopits.com/speedcloud-nxtgen-cost-calculator
+File Name: C:\Downloaded Web Sites\geopits.com\speedcloud-nxtgen-cost-calculator.html
+Content Type: text/html
+
+Uri: https://docsend.com/view/ypy9kjpvygmtwtse
+File Name: C:\Downloaded Web Sites\geopits.com\view\ypy9kjpvygmtwtse.html
+Content Type: text/html
+
+Uri: https://docsend.com/view/m8tfufz6pdw6gu7m
+File Name: C:\Downloaded Web Sites\geopits.com\view\m8tfufz6pdw6gu7m.html
+Content Type: text/html
+
+Uri: https://docsend.com/view/gnubq5zu95hran8g
+File Name: C:\Downloaded Web Sites\geopits.com\view\gnubq5zu95hran8g.html
+Content Type: text/html
+
+Uri: https://geopits.com/privacy-policy
+File Name: C:\Downloaded Web Sites\geopits.com\privacy-policy.html
+Content Type: text/html
+
+Uri: https://twitter.com/geopits_dbas
+File Name: C:\Downloaded Web Sites\geopits.com\geopits_dbas.html
+Content Type: text/html
+
+Uri: https://www.googletagmanager.com/gtag/js?id=UA-100125040-1
+File Name: C:\Downloaded Web Sites\geopits.com\gtag\js.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/images/logo/geopits-logo.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\logo\geopits-logo.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/images/certification/microsoftpartner.jpeg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\certification\microsoftpartner.jpeg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/assets/images/certification/iso.png
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\certification\iso.png
+Content Type: image/png
+
+Uri: https://geopits.com/assets/images/home/recognitions/2.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\recognitions\2.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/home-banner.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\home-banner.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/partner/1.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\partner\1.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/partner/2.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\partner\2.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/partner/3.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\partner\3.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/partner/4.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\partner\4.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/partner/5.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\partner\5.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/services/remote-support.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\services\remote-support.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/services/cloud-db-mgmt.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\services\cloud-db-mgmt.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/services/analytics-bi.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\services\analytics-bi.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/services/perf-optimization.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\services\perf-optimization.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/services/cloud-migration.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\services\cloud-migration.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/services/ent-appl-development.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\services\ent-appl-development.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/case-study-illus-1.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\case-study-illus-1.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/case-study-illus-2.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\case-study-illus-2.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/testimonial/chcb1.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\testimonial\chcb1.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/testimonial/opt.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\testimonial\opt.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/testimonial/hp.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\testimonial\hp.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/testimonial/tut1.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\testimonial\tut1.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/testimonial/zeal.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\testimonial\zeal.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/testimonial/dp.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\testimonial\dp.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/testimonial/focus.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\testimonial\focus.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/recognitions/1.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\recognitions\1.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/home/recognitions/3.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\home\recognitions\3.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/js/vendor/modernizr-2.8.3.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\vendor\modernizr-2.8.3.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/vendor/jquery-3.3.1.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\vendor\jquery-3.3.1.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/vendor/bootstrap.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\vendor\bootstrap.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/swiper.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\swiper.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/lightgallery.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\lightgallery.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/waypoints.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\waypoints.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/countdown.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\countdown.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/isotope.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\isotope.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/masonry.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\masonry.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/images-loaded.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\images-loaded.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/wavify.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\wavify.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/jquery.wavify.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\jquery.wavify.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/circle-progress.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\circle-progress.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/counterup.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\counterup.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/wow.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\wow.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/animation-text.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\animation-text.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/vivus.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\vivus.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/plugins/some-plugins.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\plugins\some-plugins.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/main.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/js/select2.min.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\select2.min.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Regular.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Regular.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Regular.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Regular.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Regular.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Regular.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Regular.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Regular.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Italic.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Italic.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Italic.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Italic.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Italic.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Italic.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Italic.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Italic.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Light.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Light.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Light.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Light.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Light.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Light.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Light.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Light.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Medium.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Medium.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Medium.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Medium.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Medium.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Medium.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Medium.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Medium.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-SemiBold.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-SemiBold.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-SemiBold.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-SemiBold.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-SemiBold.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-SemiBold.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-SemiBold.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-SemiBold.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Bold.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Bold.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Bold.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Bold.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Bold.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Bold.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Bold.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Bold.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-ExtraBold.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-ExtraBold.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-ExtraBold.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-ExtraBold.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-ExtraBold.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-ExtraBold.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-ExtraBold.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-ExtraBold.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Heavy.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Heavy.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Heavy.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Heavy.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Heavy.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Heavy.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/cerebrisans/CerebriSans-Heavy.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\cerebrisans\CerebriSans-Heavy.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/fa-brands-400.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-brands-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/fa-brands-400.eot?
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-brands-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/fa-brands-400.woff2
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-brands-400.woff2
+Content Type: font/woff2
+
+Uri: https://geopits.com/assets/fonts/fa-brands-400.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-brands-400.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/fa-brands-400.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-brands-400.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/fa-brands-400.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-brands-400.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/fa-light-300.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-light-300.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/fa-light-300.eot?
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-light-300-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/fa-light-300.woff2
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-light-300.woff2
+Content Type: font/woff2
+
+Uri: https://geopits.com/assets/fonts/fa-light-300.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-light-300.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/fa-light-300.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-light-300.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/fa-light-300.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-light-300.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/fa-regular-400.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-regular-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/fa-regular-400.eot?
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-regular-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/fa-regular-400.woff2
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-regular-400.woff2
+Content Type: font/woff2
+
+Uri: https://geopits.com/assets/fonts/fa-regular-400.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-regular-400.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/fa-regular-400.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-regular-400.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/fa-regular-400.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-regular-400.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/fa-solid-900.eot
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-solid-900.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/fa-solid-900.eot?
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-solid-900-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/fa-solid-900.woff2
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-solid-900.woff2
+Content Type: font/woff2
+
+Uri: https://geopits.com/assets/fonts/fa-solid-900.woff
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-solid-900.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/fa-solid-900.ttf
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-solid-900.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/fa-solid-900.svg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\fa-solid-900.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/fonts/lg.eot?n1z373
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\lg.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/lg.eot?
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\lg-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://geopits.com/assets/fonts/lg.woff?n1z373
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\lg.woff
+Content Type: font/woff
+
+Uri: https://geopits.com/assets/fonts/lg.ttf?n1z373
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\lg.ttf
+Content Type: font/ttf
+
+Uri: https://geopits.com/assets/fonts/lg.svg?n1z373
+File Name: C:\Downloaded Web Sites\geopits.com\assets\fonts\lg.svg
+Content Type: image/svg+xml
+
+Uri: https://geopits.com/assets/images/icons/selector-icon.png
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\icons\selector-icon.png
+Content Type: image/png
+
+Uri: https://geopits.com/assets/images/hero/slider-processing-slide-01-bg.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\hero\slider-processing-slide-01-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/assets/images/hero/home-appointment-hero-bg-image.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\hero\home-appointment-hero-bg-image.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/assets/images/hero/home-services-hero-bg.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\hero\home-services-hero-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/assets/images/hero/home-resolutions-hero-bg-image.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\hero\home-resolutions-hero-bg-image.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/assets/images/hero/mitech-landing-main-slider-bg.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\hero\mitech-landing-main-slider-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/assets/images/preview/mitech-landing-header-preview-bg.png
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\preview\mitech-landing-header-preview-bg.png
+Content Type: image/png
+
+Uri: https://geopits.com/assets/images/preview/mitech-landing-footer-bg-01.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\preview\mitech-landing-footer-bg-01.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/assets/images/sqlcompare.png
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\sqlcompare.png
+Content Type: image/png
+
+Uri: https://geopits.com/assets/images/quote.png
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\quote.png
+Content Type: image/png
+
+Uri: https://static.formx.stream/tracker/v1/bundle.js
+File Name: C:\Downloaded Web Sites\geopits.com\tracker\v1\bundle.js
+Content Type: application/javascript
+
+Uri: https://geopits.com/case-studies/leading-hr-company-reduces-cloud-computation-cost-by-30.html
+File Name: C:\Downloaded Web Sites\geopits.com\case-studies\leading-hr-company-reduces-cloud-computation-cost-by-30.html
+Content Type: text/html
+
+Uri: https://geopits.com/assets/images/case-studies/hyper.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\case-studies\hyper.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/case-studies/hr.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\case-studies\hr.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/icons/mitech-processing-service-image-01-80x83.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\icons\mitech-processing-service-image-01-80x83.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/icons/mitech-processing-service-image-02-80x83.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\icons\mitech-processing-service-image-02-80x83.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/icons/mitech-processing-service-image-03-80x83.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\icons\mitech-processing-service-image-03-80x83.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/icons/mitech-processing-service-image-04-80x83.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\icons\mitech-processing-service-image-04-80x83.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/icons/mitech-processing-service-image-05-80x83.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\icons\mitech-processing-service-image-05-80x83.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/icons/mitech-processing-service-image-06-80x83.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\icons\mitech-processing-service-image-06-80x83.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/speedcloud-nxtgen-cost-calculator.php
+File Name: C:\Downloaded Web Sites\geopits.com\speedcloud-nxtgen-cost-calculator.php.html
+Content Type: text/html
+
+Uri: https://geopits.com/assets/images/timeline/2018.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\timeline\2018.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/timeline/2017.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\timeline\2017.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/timeline/2019.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\timeline\2019.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/timeline/2020.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\timeline\2020.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/team/thiru.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\team\thiru.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/team/senthil.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\team\senthil.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/team/saranya.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\team\saranya.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/certification/1.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\certification\1.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/certification/2.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\certification\2.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/certification/5.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\certification\5.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/certification/4.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\certification\4.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/certification/6.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\certification\6.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/certification/7.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\certification\7.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/certification/8.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\certification\8.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/certification/3.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\certification\3.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/chcb.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\chcb.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/ram.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\ram.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/datap.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\datap.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/elp.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\elp.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/flex.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\flex.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/hp.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\hp.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/invage.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\invage.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/land.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\land.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/mydb.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\mydb.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/nautica.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\nautica.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/off.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\off.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/optit.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\optit.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/orient.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\orient.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/path.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\path.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/pb.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\pb.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/cyces.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\cyces.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/rapy.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\rapy.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/rs.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\rs.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/soft.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\soft.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/tut.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\tut.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/tvs.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\tvs.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/wonder.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\wonder.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/clients/zeal.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\clients\zeal.webp
+Content Type: image/webp
+
+Uri: https://www.microsoftpartnercommunity.com/
+File Name: C:\Downloaded Web Sites\geopits.com\index-1.htm
+Content Type: text/html
+
+Uri: https://geopits.com/assets/css/custom/career.css
+File Name: C:\Downloaded Web Sites\geopits.com\assets\css\custom\career.css
+Content Type: text/css
+
+Uri: https://geopits.com/careers/business-development-executive.html
+File Name: C:\Downloaded Web Sites\geopits.com\careers\business-development-executive.html
+Content Type: text/html
+
+Uri: https://geopits.com/careers/database-administrator.html
+File Name: C:\Downloaded Web Sites\geopits.com\careers\database-administrator.html
+Content Type: text/html
+
+Uri: https://geopits.com/careers/ms-sql-dba.html
+File Name: C:\Downloaded Web Sites\geopits.com\careers\ms-sql-dba.html
+Content Type: text/html
+
+Uri: https://geopits.com/careers/database-developer.html
+File Name: C:\Downloaded Web Sites\geopits.com\careers\database-developer.html
+Content Type: text/html
+
+Uri: https://geopits.com/careers/default-page-for-careers-php-please-change-this-title.html
+File Name: C:\Downloaded Web Sites\geopits.com\careers\default-page-for-careers-php-please-change-this-title.html
+Content Type: text/html
+
+Uri: https://geopits.com/assets/images/career/culture.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\career\culture.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/assets/images/career/domain.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\career\domain.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/assets/images/career/experience.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\career\experience.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/assets/images/career/group-image.webp
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\career\group-image.webp
+Content Type: image/webp
+
+Uri: https://geopits.com/assets/images/career/family.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\career\family.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/assets/images/career/arrow.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\career\arrow.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/case-studies/a-multinational-retailbanking-company-migrates-from-sql-2000-to-2017-with-minimal-downtime.html
+File Name: C:\Downloaded Web Sites\geopits.com\case-studies\a-multinational-retailbanking-company-migrates-from-sql-2000-to-2017-with-minimal-downtime.html
+Content Type: text/html
+
+Uri: https://geopits.com/howdymanage/uploads/image/hr.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\hr.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/howdymanage/uploads/image/rhb.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\rhb.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/howdymanage/uploads/image/tvs.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\tvs.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/howdymanage/uploads/image/hyper-png.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\hyper-png.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/blog/top-7-things-to-look-for-in-a-managed-dba-service-provider.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\top-7-things-to-look-for-in-a-managed-dba-service-provider.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/top-5-new-features-of-sql-server-2019.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\top-5-new-features-of-sql-server-2019.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/what-is-a-cloud-database.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\what-is-a-cloud-database.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/top-5-cloud-databases-of-2021.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\top-5-cloud-databases-of-2021.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/outsourcing-database-administration-everything-you-must-know.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\outsourcing-database-administration-everything-you-must-know.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/important-aspects-of-database-security.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\important-aspects-of-database-security.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/when-to-perform-a-sql-server-health-check.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\when-to-perform-a-sql-server-health-check.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/copying-multiple-tables-from-one-database-to-another-database-using-import-export-wizard.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\copying-multiple-tables-from-one-database-to-another-database-using-import-export-wizard.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/sql-server-integration-services-ssis-etl-process-basics-part-1.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\sql-server-integration-services-ssis-etl-process-basics-part-1.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/backing-up-a-single-table-with-its-data-from-a-database-and-restoring-it-on-different-database.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\backing-up-a-single-table-with-its-data-from-a-database-and-restoring-it-on-different-database.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/?pg=2
+File Name: C:\Downloaded Web Sites\geopits.com\blog\index-1.htm
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/general.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\general.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/configuration.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\configuration.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/migration.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\migration.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/etl.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\etl.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/security.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\security.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/new-features.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\new-features.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/high-availability.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\high-availability.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/replication.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\replication.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/backup.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\backup.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/alerts.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\alerts.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/troubleshooting.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\troubleshooting.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/performance-tuning.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\performance-tuning.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/mongodb.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\mongodb.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/categories/azure.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\categories\azure.html
+Content Type: text/html
+
+Uri: https://geopits.com/howdymanage/uploads/image/blogs/copying-multiple-tables-from-one-database-to-another-database-using-import-or-export-wizard/01.jpeg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\blogs\copying-multiple-tables-from-one-database-to-another-database-using-import-or-export-wizard\01.jpeg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/howdymanage/uploads/image/blogs/top-5-cloud-databases-of-2021/top5-cover-image.jpeg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\blogs\top-5-cloud-databases-of-2021\top5-cover-image.jpeg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/howdymanage/uploads/image/blogs/outsourcing-database-administration-everything-you-must-know/01.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\blogs\outsourcing-database-administration-everything-you-must-know\01.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/howdymanage/uploads/image/blogs/important-aspects-of-database-security/01.jpg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\blogs\important-aspects-of-database-security\01.jpg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/howdymanage/uploads/image/performance-health-check-img.jpeg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\performance-health-check-img.jpeg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/howdymanage/uploads/image/blogs/sql-server-integration-services-ssis-etl-process-basics-part-1/01.jpeg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\blogs\sql-server-integration-services-ssis-etl-process-basics-part-1\01.jpeg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/howdymanage/uploads/image/blogs/backing-up-a-single-table-with-its-data-from-a-database-and-restoring-it-on-different-database/01.jpeg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\blogs\backing-up-a-single-table-with-its-data-from-a-database-and-restoring-it-on-different-database\01.jpeg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/sql-server/features/transparent-database-encryption/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\features\transparent-database-encryption\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server/features/peer-to-peer-transactional-replication/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\features\peer-to-peer-transactional-replication\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server/features/always-on-availability-groups/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\features\always-on-availability-groups\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server/features/accelerated-database-recovery/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\features\accelerated-database-recovery\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server/versions/2019/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\versions\2019\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server/versions/2017/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\versions\2017\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server/versions/2016/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\versions\2016\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server/versions/2014/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\versions\2014\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server/versions/2012/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\versions\2012\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/howdymanage/uploads/image/geopits-dba.jpeg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\geopits-dba.jpeg
+Content Type: image/jpeg
+
+Uri: https://technology.siliconindia.com/vendor/geopits-let-the-experts-deal-with-dba-cid-10433.html
+File Name: C:\Downloaded Web Sites\geopits.com\vendor\geopits-let-the-experts-deal-with-dba-cid-10433.html
+Content Type: text/html
+
+Uri: https://www.google.com/maps/place/Geo+Platinum+IT+Services+-+GeoPITS/@13.0251289,77.6590475,15z/data=!4m5!3m4!1s0x0:0x5c431b47e03582ec!8m2!3d13.0251289!4d77.6590475?shorturl=1
+File Name: C:\Downloaded Web Sites\geopits.com\maps\place\Geo Platinum IT Services - GeoPITS\@13.0251289,77.6590475,15z\data=!4m5!3m4!1s0x00x5c431b47e03582ec!8m2!3d13.0251289!4d77.6590475.html
+Content Type: text/html
+
+Uri: https://geopits.com/assets/js/speed_cloud_calculator.js
+File Name: C:\Downloaded Web Sites\geopits.com\assets\js\speed_cloud_calculator.js
+Content Type: application/javascript
+
+Uri: https://policies.google.com/privacy?hl=en
+File Name: C:\Downloaded Web Sites\geopits.com\privacy.html
+Content Type: text/html
+
+Uri: https://www.facebook.com/geopitsOfficial/
+File Name: C:\Downloaded Web Sites\geopits.com\geopitsOfficial\index.htm
+Content Type: text/html
+
+Uri: https://p.adsymptotic.com/d/px/?_pid=16218&_psign=0aa5badf92527f7732e22463d6fa4dbc&coopa=0&gdpr=0&gdpr_consent=&_puuid=cdfb5042-897c-44c1-aec9-b63bd517890e&_expected_cookie=80c40f55b56ad0bb8d81009c87043e68
+File Name: C:\Downloaded Web Sites\geopits.com\d\px\index.htm.gif
+Content Type: image/gif
+
+Uri: https://yourstory.com/2020/10/benglauru-startup-enabling-businesses-specialising-data/amp
+File Name: C:\Downloaded Web Sites\geopits.com\2020\10\benglauru-startup-enabling-businesses-specialising-data\amp.html
+Content Type: text/html
+
+Uri: https://geopits.com/assets/images/career/hero-img.png
+File Name: C:\Downloaded Web Sites\geopits.com\assets\images\career\hero-img.png
+Content Type: image/png
+
+Uri: https://geopits.com/not-accepting-responses.php
+File Name: C:\Downloaded Web Sites\geopits.com\not-accepting-responses.php.html
+Content Type: text/html
+
+Uri: https://twitter.com/intent/tweet?url=https://geopits.com/blog/top-7-things-to-look-for-in-a-managed-dba-service-provider.html
+File Name: C:\Downloaded Web Sites\geopits.com\intent\tweet.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/contained-database-in-sql-server.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\contained-database-in-sql-server.html
+Content Type: text/html
+
+Uri: https://geopits.com/blog/enabling-instant-file-initialization.html
+File Name: C:\Downloaded Web Sites\geopits.com\blog\enabling-instant-file-initialization.html
+Content Type: text/html
+
+Uri: https://geopits.com/howdymanage/uploads/image/blogs/contained-database-in-sql-server/01.jpeg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\blogs\contained-database-in-sql-server\01.jpeg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/howdymanage/uploads/image/blogs/enabling-instant-file-initialization/enable-instant-01.jpeg
+File Name: C:\Downloaded Web Sites\geopits.com\howdymanage\uploads\image\blogs\enabling-instant-file-initialization\enable-instant-01.jpeg
+Content Type: image/jpeg
+
+Uri: https://geopits.com/sql-server/features/in-memory-database-memory-optimized-tempdb-metadata/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\features\in-memory-database-memory-optimized-tempdb-metadata\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server/features/polybase-head-node/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\features\polybase-head-node\index.htm
+Content Type: text/html
+
+Uri: https://geopits.com/sql-server/features/always-encrypted-with-secure-enclaves/
+File Name: C:\Downloaded Web Sites\geopits.com\sql-server\features\always-encrypted-with-secure-enclaves\index.htm
+Content Type: text/html
+
+Uri: https://m.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https:%2F%2Fm.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fgeopits.com%252Fblog%252Ftop-7-things-to-look-for-in-a-managed-dba-service-provider.html&cancel_url=https:%2F%2Fm.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=touch&locale=te_IN&_rdr
+File Name: C:\Downloaded Web Sites\geopits.com\login.php.xhtml
+Content Type: application/xhtml+xml
+
+Uri: https://www.linkedin.com/signup/cold-join?session_redirect=https:%2F%2Fwww.linkedin.com%2FshareArticle%2F%3Furl%3Dhttps:%2F%2Fgeopits.com%2Fblog%2Ftop-7-things-to-look-for-in-a-managed-dba-service-provider.html&trk=login_reg_redirect
+File Name: C:\Downloaded Web Sites\geopits.com\signup\cold-join.html
+Content Type: text/html
+
